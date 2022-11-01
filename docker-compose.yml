@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  app:
+  web:
     image: rubyapp
     environment:
       POSTGRES_USER: postgres
