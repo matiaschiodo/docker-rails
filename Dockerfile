@@ -18,12 +18,10 @@ COPY package.json ./
 
 COPY Gemfile* ./
 
-RUN bundle install --jobs=20 --retry=4
+RUN bundle config set --local path 'vendor/bundle' && bundle install --jobs=20 --retry=4
 
 RUN cp Gemfile.lock /tmp
 
 COPY . .
 
-RUN chmod +x build/**/*.sh
-
-CMD ["sh"]
+CMD bundle exec rails s -b 0.0.0.0 -e development
