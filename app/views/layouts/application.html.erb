@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <%= link_to 'cerrar sesion', destroy_user_session_path, data: {turbo_method: :delete} %>
     <%= yield %>
   </body>
 </html>
