@@ -30,4 +30,17 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  budgets:
+    form:
+      name: Name
+      expiration_date: Expiration date
+      total: Total
+    new_budget: New Budgets
+  activerecord:
+    models:
+      budget:
+        one: Budget
+        others: Budgets
+  common:
+    back: 'Atras'
   hello: "Hello world"

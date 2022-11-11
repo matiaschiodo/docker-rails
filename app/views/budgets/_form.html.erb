@@ -12,17 +12,17 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label :name, label: t('budgets.name') %>
     <%= form.text_field :name %>
   </div>
 
   <div class="field">
-    <%= form.label :expiration_date %>
+    <%= form.label :expiration_date, label: t('budgets.expiration_date') %>
     <%= form.date_select :expiration_date %>
   </div>
 
   <div class="field">
-    <%= form.label :total %>
+    <%= form.label :total, label: t('budgets.total') %>
     <%= form.number_field :total %>
   </div>
 
