@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'rails-i18n'
+gem 'i18n-tasks', '~> 0.7.4'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
