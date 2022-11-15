@@ -31,11 +31,6 @@ ActiveRecord::Schema.define(version: 2022_11_09_185608) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "homes", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "line_items", force: :cascade do |t|
     t.string "quantity"
     t.integer "price"
