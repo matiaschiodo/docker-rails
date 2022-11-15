@@ -45,6 +45,7 @@ span.material-symbols-outlined{
   display: flex;
   align-items: center;
   height: 60px;
+  margin-top: 1rem;
 }
 .navbar-left {
   margin-left: auto;
@@ -81,7 +82,7 @@ div.navbar-search {
 
 .mobile-menu {
   position: absolute;
-  top: 30px;
+  top: 60px;
   padding: 15px;
 }
 .mobile-menu a {
@@ -95,7 +96,7 @@ div.navbar-search {
 }
 
 .mobile-menu ul li {
-  margin-bottom: 15px;
+ margin-bottom: 15px; 
 }
 
 #lista-menu a{

@@ -21,7 +21,6 @@
         
       <div class="navbar-logo"><a href="#">Logo</a>
       </div>
-
       <div class="search-button">
         <span class="material-symbols-outlined" id="search">
             search
@@ -55,9 +54,12 @@
       const mobileMenu = document.getElementById('menuMobile');
 
       menuHamIcon.addEventListener('click' , toggleMobileMenu);
+      mobileMenu.addEventListener('click' , closeMobileMenu)
 
       function toggleMobileMenu() {
       menuMobile.classList.toggle('inactive');
+
       }
+
   </script>
     
