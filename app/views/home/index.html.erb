@@ -4,6 +4,7 @@
               <div id="menu"><span class="material-symbols-outlined">
                 menu
                 </span></div>
+
         
             <div class="navbar-left">
         
@@ -16,16 +17,18 @@
               </ul>
             </div>
         
-                <div class="navbar-logo"><a href="#">Logo</a></div>
-    
+                <div class="navbar-logo"><a href="#">Logo</a>
+                </div>
                 <div class="search-button"><span class="material-symbols-outlined" id="search">
                     search
-                    </span></div>
-       
+                    </span>
+                </div>
                 <div class="navbar-user"><a href="#"><span class="material-symbols-outlined" id="user">
                     account_circle
-                    </span></a></div>
-    
+                    </span></a>
+                </div>
+            
+           
                 <div class="mobile-menu inactive" id="menuMobile">
                     <ul>
                         <li id="lista-menu"><a href="/">Menú</a></li>
@@ -41,4 +44,17 @@
     
 
 </header>
+
+<script>
+const menuHamIcon = document.getElementById('menu');
+const mobileMenu = document.getElementById('menuMobile');
+
+menuHamIcon.addEventListener('click' , toggleMobileMenu);
+
+function toggleMobileMenu() {
+    menuMobile.classList.toggle('inactive');
+}
+
+
+</script>
     
