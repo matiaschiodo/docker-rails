@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2022_11_04_172436) do
+=======
 ActiveRecord::Schema.define(version: 2022_11_09_185608) do
+>>>>>>> 890b7ee446d88216228f9bf16cd3735e79c9dce4
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +25,8 @@ ActiveRecord::Schema.define(version: 2022_11_09_185608) do
     t.integer "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
+=======
     t.bigint "owner_id", null: false
     t.index ["owner_id"], name: "index_budgets_on_owner_id"
   end
@@ -54,6 +60,7 @@ ActiveRecord::Schema.define(version: 2022_11_09_185608) do
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+>>>>>>> 890b7ee446d88216228f9bf16cd3735e79c9dce4
   end
 
   create_table "users", force: :cascade do |t|

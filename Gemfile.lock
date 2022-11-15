@@ -208,7 +208,6 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  aarch64-linux
   ruby
   x86_64-linux
 
