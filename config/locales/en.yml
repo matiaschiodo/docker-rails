@@ -8,6 +8,18 @@ en:
     total: Total
   common:
     back: Back
+  devise:
+    sessions:
+      new:
+        log_in: Log in
+        log_in_title: Log in
+    shared:
+      links:
+        forgot_password: Forgot your password?
+        log_in: Log in
+        new_confirmation_mail: Didn't recive confirmation instructions?
+        new_unlock_mail: Didn't recive unlock instructions?
+        sign_up: Sign up
   errors:
     messages:
       not_saved: Not saved

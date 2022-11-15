@@ -8,6 +8,18 @@ es:
     total: Total
   common:
     back: Atras
+  devise:
+    sessions:
+      new:
+        log_in: Iniciar Sesion
+        log_in_title: Inicio de Sesion
+    shared:
+      links:
+        forgot_password: Olvidaste tu contraseña?
+        log_in: Iniciar Sesion
+        new_confirmation_mail: No recibi mail de confirmacion, enviar de nuevo?
+        new_unlock_mail: No recibi mail de desbloqueo, enviar de nuevo?
+        sign_up: Registrarse
   errors:
     messages:
       not_saved: Sin Guardar
