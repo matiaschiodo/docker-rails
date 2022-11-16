@@ -90,6 +90,11 @@ footer div {
     width: 52px;
 }
 
+.telecom-mobile {
+    height: 33px;
+    width: 168px;
+}
+
 /* footer */
 /* footer-desktop */
 
@@ -112,13 +117,12 @@ footer div {
     display: flex;
     justify-content: center;
     height: 50px;
-
     width: 100vw;
     background-color: var(--grey);
 }
 
 .footer_telecom-section img {
-    height: 23px;
+    height: 33px;
     margin: 10px;
 }
 
