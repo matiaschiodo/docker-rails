@@ -1,5 +1,15 @@
 ---
 en:
+  Cancel_my_account: Cancel my account
+  Change_password: Change password
+  Edit: Edit
+  Forgot_password: Forgot password
+  Resend_confirmation_mail: Resend confirmation mail
+  Resend_unlock_mail: Resend unlock mail
+  Send_reset_password_mail: Send reset password mail
+  Sign_up: Sign up
+  Unhappy: Unhappy
+  Update: Update
   budgets:
     form:
       expiration_date: Expiration date

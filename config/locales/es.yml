@@ -1,5 +1,15 @@
 ---
 es:
+  Cancel_my_account: Cancelar Cuenta
+  Change_password: Cambiar contraseña
+  Edit: Editar cuenta
+  Forgot_password: Olvidaste tu contraseña?
+  Resend_confirmation_mail: Reenviar mail de confirmacion
+  Resend_unlock_mail: Reenviar mail de desbloqueo
+  Send_reset_password_mail: Enviar mail para cambio de contraseña
+  Sign_up: Registrarse
+  Unhappy: No estas conforme?
+  Update: Guardar cambios
   budgets:
     form:
       expiration_date: Fecha de expiracion
