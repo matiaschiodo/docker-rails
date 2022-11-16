@@ -2,7 +2,23 @@
     --grey: #D9D9D9;
     --black: #000000;
     --white: #FFFFFF;
-    --soft-gray: #667080;
-    --dark-Grey: #9197A1;
+    --dark-grey: #667080;
+    --soft-Grey: #9197A1;
+    --navbar-grey: #D9D9D9; 
+    --navbar-white: #EEF1F4;
+    --yellow: #F6CA56;
+    --light-yellow: #FFFAEF;
+    --mostaza: #936B06;
+    --darkest-grey: #2A2E34;
+    --background-black: #1E1E1E;
+    --neon-green: #21D3A3;
 
-}
+  }
+  
+  
+  * {
+      font-family: 'Work Sans', sans-serif;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
