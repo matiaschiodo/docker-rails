@@ -3,9 +3,9 @@
 es:
   devise:
     confirmations:
-      confirmed: "Your email address has been successfully confirmed."
-      send_instructions: "You will receive an email with instructions for how to confirm your email address in a few minutes."
-      send_paranoid_instructions: "If your email address exists in our database, you will receive an email with instructions for how to confirm your email address in a few minutes."
+      confirmed: "Su email ha sido confirmado."
+      send_instructions: "Recivira un email para poder confirmar su direccion de email en unos instantes."
+      send_paranoid_instructions: "Si su email ya se encuentra en nuestra base de datos, recivira un email para poder confirmar su direccion de email en unos instantes."
     failure:
       already_authenticated: "You are already signed in."
       inactive: "Your account is not activated yet."
