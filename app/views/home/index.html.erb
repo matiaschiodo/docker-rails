@@ -1,50 +1,41 @@
 <header>
-
+     
   <nav class="navbar">
+        <div id="menu"><span class="material-symbols-outlined">
+          menu
+          </span></div>
 
-    <div id="menu"><span class="material-symbols-outlined">
-        menu
-      </span>
-    </div>
-
-
-
-    <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
-    </div>
-
-    <div class="navbar-left">
-
-      <ul>
-        <li><a href="/">Suscripciones</a></li>
-        <li><a href="/">Tienda</a></li>
-        <li><a href="/">TV y Streaming</a></li>
-        <li><a href="/">Presupuestos</a></li>
-        <li><a href="/">Contacto</a></li>
-      </ul>
-    </div>
-
-    <div class="search-button">
-      <span class="material-symbols-outlined" id="search">
-        search
-      </span>
-    </div>
-    <div class="navbar-user"><a href="#">
-        <span class="material-symbols-outlined" id="user">
+      <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
+      </div>
+      <div class="navbar-home">
+          <ul>
+            <li><a href="/">Suscripciones</a></li>
+            <li><a href="/">Tienda</a></li>
+            <li><a href="/">TV y Streaming</a></li>
+            <li><a href="/">Presupuestos</a></li>
+            <li><a href="/">Contacto</a></li>
+          </ul>
+      </div>
+      <div class="search-button">
+          <span class="material-symbols-outlined" id="search">
+          search
+          </span>
+      </div>
+      <div class="navbar-user"><a href="#"><span class="material-symbols-outlined" id="user">
           account_circle
-        </span></a>
-    </div>
-
-
-    <div class="mobile-menu inactive" id="menuMobile">
-      <ul>
-        <li id="lista-menu"><a href="/">Menú</a></li>
-        <li id="lista1"><a href="/">Suscripciones</a></li>
-        <li id="lista1"><a href="/">Tienda</a></li>
-        <li id="lista1"><a href="/">TV y Streaming</a></li>
-        <li id="lista1"><a href="/">Presupuestos</a></li>
-        <li id="lista1"><a href="/">Contacto</a></li>
-      </ul>
-    </div>
+          </span></a>
+      </div>
+     
+      <div class="mobile-menu inactive" id="menuMobile">
+          <ul>
+              <li id="lista-menu"><a href="/">Menú</a></li>
+              <li id="lista1"><a href="/">Suscripciones</a></li>
+              <li id="lista1"><a href="/">Tienda</a></li>
+              <li id="lista1"><a href="/">TV y Streaming</a></li>
+              <li id="lista1"><a href="">Presupuestos</a></li>
+              <li id="lista1"><a href="/">Contacto</a></li>
+          </ul>
+      </div>
 
   </nav>
 
@@ -52,18 +43,18 @@
 </header>
 
 <script>
-  
-  const menuHamIcon = document.getElementById('menu');
-  const mobileMenu = document.getElementById('menuMobile');
+const menuHamIcon = document.getElementById('menu');
+const mobileMenu = document.getElementById('menuMobile');
 
-  menuHamIcon.addEventListener('click', toggleMobileMenu);
-  mobileMenu.addEventListener('click', closeMobileMenu)
+menuHamIcon.addEventListener('click' , toggleMobileMenu);
 
-  function toggleMobileMenu() {
-    menuMobile.classList.toggle('inactive');
+function toggleMobileMenu() {
+menuMobile.classList.toggle('inactive');
+}
 
-  }
+
 </script>
+
 
   <main>
 
