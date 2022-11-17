@@ -1,33 +1,36 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
+---
 es:
-  hello: "Hello world"
+  Cancel_my_account: Cancelar Cuenta
+  Change_password: Cambiar contraseña
+  Edit: Editar cuenta
+  Forgot_password: Olvidaste tu contraseña?
+  Resend_confirmation_mail: Reenviar mail de confirmacion
+  Resend_unlock_mail: Reenviar mail de desbloqueo
+  Send_reset_password_mail: Enviar mail para cambio de contraseña
+  Sign_up: Registrarse
+  Unhappy: No estas conforme?
+  Update: Guardar cambios
+  budgets:
+    form:
+      expiration_date: Fecha de expiracion
+      name: Nombre
+    new_budget: Nuevo Presupuesto
+    total: Total
+  common:
+    back: Atras
+  devise:
+    sessions:
+      new:
+        log_in: Iniciar Sesion
+        log_in_title: Inicio de Sesion
+    shared:
+      links:
+        forgot_password: Olvidaste tu contraseña?
+        log_in: Iniciar Sesion
+        new_confirmation_mail: No recibi mail de confirmacion, enviar de nuevo?
+        new_unlock_mail: No recibi mail de desbloqueo, enviar de nuevo?
+        sign_up: Registrarse
+  errors:
+    messages:
+      not_saved: Sin Guardar
+  hello: Hello world

@@ -7,31 +7,27 @@
       </span>
     </div>
 
-
-    <div class="navbar-left">
-
+    <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
+    </div>
+    <div class="navbar-home">
       <ul>
         <li><a href="/">Suscripciones</a></li>
         <li><a href="/">Tienda</a></li>
         <li><a href="/">TV y Streaming</a></li>
-        <li><a href="/">Presupuestos</a></li>
+        <li><a href="/budgets">Presupuestos</a></li>
         <li><a href="/">Contacto</a></li>
       </ul>
-    </div>
-
-    <div class="navbar-logo"><a href="#">Logo</a>
     </div>
     <div class="search-button">
       <span class="material-symbols-outlined" id="search">
         search
       </span>
     </div>
-    <div class="navbar-user"><a href="#">
-        <span class="material-symbols-outlined" id="user">
+    <div class="navbar-user"><a href="/my_accounts"><span class="material-symbols-outlined" id="user">
           account_circle
-        </span></a>
+        </span>
+        <%= link_to '', destroy_user_session_path, data: {turbo_method: :delete} %></a>
     </div>
-
 
     <div class="mobile-menu inactive" id="menuMobile">
       <ul>
@@ -39,7 +35,7 @@
         <li id="lista1"><a href="/">Suscripciones</a></li>
         <li id="lista1"><a href="/">Tienda</a></li>
         <li id="lista1"><a href="/">TV y Streaming</a></li>
-        <li id="lista1"><a href="/">Presupuestos</a></li>
+        <li id="lista1"><a href="">Presupuestos</a></li>
         <li id="lista1"><a href="/">Contacto</a></li>
       </ul>
     </div>
@@ -48,9 +44,14 @@
 
 
 </header>
+<main>
 
+
+
+
+</main>
+<!-- Script header -->
 <script>
-  
   const menuHamIcon = document.getElementById('menu');
   const mobileMenu = document.getElementById('menuMobile');
 
@@ -63,11 +64,12 @@
   }
 </script>
 
+
 <div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide"><img src="" alt="img-slider"></div>
     <div class="swiper-slide">Slide 2</div>
     <div class="swiper-slide">Slide 3</div>
     ...
@@ -83,10 +85,60 @@
   <div class="swiper-scrollbar"></div>
 </div>
 
+<section class="gris-text50">
+  <h2>Encontrá en Flow todo lo que te gusta</h2>
+  <p>TV en vivo, música, deportes, películas, series on-demand y mucho más </p>
+  <div>
+    <a href="#">Flow full</a>
+    <a href="#">Flow flex</a>
+    <a href="#">Flow HD</a>
+
+  </div>
+</section>
+<section>
+  <img src="" alt="img-card">
+  <p>Internet 100 MB + </p>
+  <p>Flow Full</p>
+  <p>$4.790 final por mes </p>
+  <p>Cliente línea móvil - $6.400 por 12 meses</p>
+  <button>¡Lo quiero!</button>
+</section>
+
+<section>
+  <h2 class="gris-text50">La máxima experiencia en entretenimiento</h2>
+  <p>Conocé la <a href="#">
+      guía de canales
+    </a> </p>
+
+</section>
+<!-- Script Slider -->
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+</script>
 <footer class="footer-mobile">
 
 
-  <h1><img src="/images/imgs/Telecom_argentina_logo21 1.png" alt=""></h1>
+  <h1><img class="Telecom-img" src="./images/icon-telecom.png" alt=""></h1>
   <ul>
     <li>Acerca de</li>
     <li>Asistencia</li>
@@ -102,9 +154,9 @@
   </ul>
   <section>
     <ul class="icons-list">
-      <li><img class="img img2" src="/images/facebbok.png" alt=""></li>
-      <li><img class="img" src="/images/twitter.png" alt=""></li>
-      <li><img class="img" src="/images/linkedin.png" alt=""></li>
+      <li><img class="img img2" src="./images/facebbok.png" alt=""></li>
+      <li><img class="img" src="./images/twitter.png" alt=""></li>
+      <li><img class="img" src="./images/linkedin.png" alt=""></li>
     </ul>
   </section>
   <section class="footer_final-section">
@@ -113,8 +165,8 @@
       <li>Todos los derechos reservados</li>
     </ul>
     <ul class="footer_afip-section">
-      <li><img class="img" src="/images/aaip-icon.png" alt=""></li>
-      <li><img class="img" src="/images/dataFiscal-icon.png" alt=""></li>
+      <li><img class="img3" src="./images/aaip-icon.png" alt=""></li>
+      <li><img class=" img3" src="./images/dataFiscal-icon.png" alt=""></li>
     </ul>
   </section>
 
@@ -122,7 +174,7 @@
 
 <footer class="footer-desktop">
   <section class="footer_telecom-section">
-    <img src="./images/imgs/Telecom_argentina_logo21 1.png" alt="">
+    <img src="./images/icon-telecom.png" alt="">
   </section>
   <section class="footer_first-section">
 
@@ -157,9 +209,9 @@
         Arrenpentimiento
       </li>
       <ul class="icons-list">
-        <li><img class="img img2" src="/images/facebbok.png" alt=""></li>
-        <li><img class="img img2" src="/images/twitter.png" alt=""></li>
-        <li><img class="img img2" src="/images/linkedin.png" alt=""></li>
+        <li><img class="img img2" src="./images/facebbok.png" alt=""></li>
+        <li><img class="img img2" src="./images/twitter.png" alt=""></li>
+        <li><img class="img img2" src="./images/linkedin.png" alt=""></li>
       </ul>
     </ul>
   </section>
@@ -172,8 +224,8 @@
         CUIT 30-63945373-</li>
     </ul>
     <ul class="footer_afip-section">
-      <li><img class="afip-icon-desktop" src="/images/aaip-icon.png" alt=""></li>
-      <li><img class=" afip-icon-desktop" src="/images/dataFiscal-icon.png" alt=""></li>
+      <li><img class="afip-icon-desktop" src="./images/aaip-icon.png" alt=""></li>
+      <li><img class=" afip-icon-desktop" src="./images/dataFiscal-icon.png" alt=""></li>
     </ul>
   </section>
 </footer>
