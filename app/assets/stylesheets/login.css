@@ -1,4 +1,119 @@
+:root  {
+    --Content1: #191919;
+    --Gris-text-50: #F3F3F3;
+    --Green: #21D3A3;
+    --Content3: #32373E;
+}
 
-/* .field{
-color: red;
-} */
+
+
+.main_login {
+    background-color: var(--Content1);
+    position: relative;
+    padding: 90px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.field .field_login {
+    background-color: var(--Content3);
+    border-radius: 4.8px 4.8px 0px 0px;
+}
+
+.text_login {
+    color: var(--Gris-text-50);
+}
+
+.login_title {
+    color: var(--Gris-text-50);
+    display: none;
+}
+
+div.title {
+    display: flex;
+    justify-content: center;
+}
+
+#iniciar_sesion {
+    color: var(--Gris-text-50);
+    text-align: center;
+    font-size: 24px;
+
+}
+
+#login_button {
+    background-color: var(--Green);
+    width: 319px;
+    height: 40px;
+    border-radius: 4.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items_login {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.social_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_login img {
+    padding: 14.6px;
+}
+
+#facebook_login {
+    background-color: var(--Gris-text-50);
+}
+
+
+
+@media (min-width: 1001px) {
+    .main_login {
+    Width: 552px;
+    Height: 690px;
+    margin: auto;
+    }
+    div.title {
+        padding-bottom: 40px;
+    }
+    .field {
+        Width: 360px;
+    }
+    #iniciar_sesion {
+        display: none;
+    }
+    #login_button {
+        width: 360px;
+    }
+    .items_login {
+        padding-top: 24px;
+    }
+}
+
+@media (max-width: 1000px) {
+    div.title {
+        padding-bottom: 32px;
+    }
+    .field {
+        width: 319px;
+    }
+    #login_button {
+        width: 319px;
+    }
+    .items_login {
+        padding-top: 36px;
+    }
+    
+    #linea_login {
+        width: 141.24px;
+    }
+}
