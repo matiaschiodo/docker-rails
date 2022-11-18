@@ -9,17 +9,26 @@
 }
 
 
-.field_login #user_email, #user_password {
-    background-color: var(--Content3);
-    border-radius: 4.8px 4.8px 0px 0px;
+.field_login {
+    #user_email, #user_password {
+        background-color: var(--Content3);
+        border-radius: 4.8px 4.8px 0px 0px;
+        height: 40px;
+
+        &:focus-visible {
+            color: var(--Green);
+        }
+        &:active {
+            border-color: var(--Background);
+        }
+    }
 }
 
-.field_login #user_email, #user_password:focus-visible {
-    color: var(--Green);
+.field_login #user_email {
+    margin-bottom: 16px;
 }
-
-.field_login #user_email, #user_password:active {
-    border-color: var(--Background);
+.field_login #user_password {
+    margin-bottom: 8px;
 }
 
 .text_login {
@@ -59,6 +68,7 @@ div.title {
     align-items: center;
     align-content: center;
     justify-content: space-between;
+    padding-top: 24px;
 }
 
 .social_login {
@@ -72,7 +82,10 @@ div.title {
 }
 
 #facebook_login {
+    margin: 14.6px;
+    padding: 5px 10px;
     background-color: var(--Gris-text-50);
+    border-radius: 100%;
 }
 
 
@@ -96,9 +109,7 @@ div.title {
     #login_button input {
         width: 360px;
     }
-    .items_login {
-        padding-top: 24px;
-    }
+
 }
 
 @media (max-width: 1000px) {
@@ -115,9 +126,6 @@ div.title {
     }
     #login_button input {
         width: 319px;
-    }
-    .items_login {
-        padding-top: 36px;
     }
     
     #linea_login {

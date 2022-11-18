@@ -1,14 +1,24 @@
-<h2><%=t('Sign_up')%></h2>
+<main>
+
+  <div class="logo_signup">
+      <h2><%=t('Sign_up')%></h2>
+      <img src="/images/Flow_logo_grande.png">
+  </div>
+  <div class="title_signup">
+      <p>Datos de cuenta</p>
+  </div>
+
+<!-- FORMULARIO -->
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
+  <div class="field_email">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="field_password">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -16,14 +26,31 @@
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
+  <div class="field_confirmation">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="actions">
+  <div class="datos_signup">
+    <p>Datos personales</p>
+    <form>
+        <p>Nombre</p>
+          <input type="button" id="name"> Nombre
+        <p>Apellido</p>
+          <input type="button" id="apellido"> Apellido
+        <p>Teléfono</p>
+          <input type="button" id="telefono"> 011-12345678
+        <p>Dirección</p>
+          <input type="button" id="direccion"> Dirección 123
+    </form>
+  </div>
+
+  <div class="actions_signup">
     <%= f.submit t('Sign_up') %>
   </div>
+
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</main>
