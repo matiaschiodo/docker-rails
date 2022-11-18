@@ -1,3 +1,244 @@
-.gris-text50{
+/* notas */
+/* Averiguar fuente 'work sans */
+
+
+.gris-text50 {
     color: var(--Gris-text-50);
+}
+
+main {
+    width: 380px;
+    color: var(--Gris-text-50);
+    background: var(--Background);
+}
+
+.landing_first-section,
+.landing_card-section,.landing_third-section {
+    width: 100%;
+    /* margin-left: 10px; */
+    display: flex;
+    /* border: solid; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.slider-img {
+    /* margin-left: 50px; */
+    width: 100%;
+}
+
+.swiper {
+    height: 200px;
+    width: 380px;
+
+    /* width: 380px;
+    height: 300px;
+    margin-bottom: 30px; */
+}
+
+.landing_h2 {
+margin-top: 20px;
+    width: 334px;
+    height: 58px;
+    font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+    /* Heading/Heading 4 */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* or 120% */
+    text-align: center;
+}
+
+.landing_p {
+
+    width: 334px;
+    height: 48px;
+
+    /* Body/Body */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+}
+
+.landing_planes-flow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    width: 302px;
+    height: 40px;
+    background: var(--Content1);
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.landing_planes-flow a {
+    text-decoration: none;
+    color: var(--Gris-text-50);
+    width: 71px;
+    height: 24px;
+
+    /* Body/Body */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.flow-full {
+    color: var(--Green);
+
+}
+.landing_card-section{
+    /* width: 320px; */
+/* height: 143px; */
+}
+.landing_card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    /* gap: 12px; */
+
+    width: 320px;
+    height: 198px;
+
+    /* Content2 */
+    background: #2A2E34;
+
+    /* Inside auto layout */
+    /* flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;     */
+}
+
+.card-title {
+    width: 215px;
+    height: 48px;
+
+    /* Heading/Heading 5 */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    display: flex;
+    align-items: center;
+}
+
+.card-subtitle {
+    width: 215px;
+    height: 24px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+
+    /* Gris-text/50 */
+    color: #F3F3F3;
+
+
+}
+
+.final-por-mes {
+    margin-left: 5px;
+    color: var(--Gris-text-500);
+}
+
+.Linea-movil {
+    width: 100%;
+    /* width: 280px; */
+    height: 20px;
+    margin-top: 8px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 19px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: var(--blue);
+}
+
+.por-12-meses {
+    color: var(--pink);
+}
+
+.landing_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    border: none;
+    width: 280px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* Green */
+    background: #21D3A3;
+    border-radius: 4px;
+}
+.landing_third-section{
+    /* width: 320px;
+height: 58px; */
+/* Heading/Heading 4 */
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* or 120% */
+text-align: center;
+
+/* Gris-text/50 */
+color: #F3F3F3;
+
+}
+.landing_third-section p{
+    width: 320px;
+height: 24px;
+
+/* Body/Body */
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+text-align: center;
+
+/* Gris-text/50 */
+color: #F3F3F3;
+
+}
+.landing_third-section a{
+    color: var(--Green);
 }

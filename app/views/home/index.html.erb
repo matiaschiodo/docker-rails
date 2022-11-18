@@ -44,12 +44,7 @@
 
 
 </header>
-<main>
 
-
-
-
-</main>
 <!-- Script header -->
 <script>
   const menuHamIcon = document.getElementById('menu');
@@ -64,52 +59,71 @@
   }
 </script>
 
+<main>
 
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide"><img src="" alt="img-slider"></div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+  <section class="gris-text50 landing_first-section">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="slider-img" src="/images/slider.png" alt="img-slider">
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
 
-<section class="gris-text50">
-  <h2>Encontrá en Flow todo lo que te gusta</h2>
-  <p>TV en vivo, música, deportes, películas, series on-demand y mucho más </p>
-  <div>
-    <a href="#">Flow full</a>
-    <a href="#">Flow flex</a>
-    <a href="#">Flow HD</a>
+    <h2 class="landing_h2">Encontrá en Flow todo lo que te gusta</h2>
+    <p class="landing_p">TV en vivo, música, deportes, películas, series on-demand y mucho más </p>
+    <div class="landing_planes-flow">
+      <a class="flow-full" href="#">
+        <span class="flow-full">
 
-  </div>
-</section>
-<section>
-  <img src="" alt="img-card">
-  <p>Internet 100 MB + </p>
-  <p>Flow Full</p>
-  <p>$4.790 final por mes </p>
-  <p>Cliente línea móvil - $6.400 por 12 meses</p>
-  <button>¡Lo quiero!</button>
-</section>
+          Flow full
+        </span>
+      </a>
+      <a href="#">Flow flex</a>
+      <a href="#">Flow HD</a>
 
-<section>
-  <h2 class="gris-text50">La máxima experiencia en entretenimiento</h2>
-  <p>Conocé la <a href="#">
-      guía de canales
-    </a> </p>
+    </div>
+  </section>
+  <section class="landing_card-section">
+    <img src="/images/landing-img.png" alt="img-card">
+    <div class="landing_card-container">
+      <p class="card-title">Internet 100 MB + </p>
+      <p class="card-title">Flow Full</p>
+      <p class="card-subtitle"> $4.790  <span class="final-por-mes">
+        final por mes
+      </span> </p>
+      <p class="Linea-movil">Cliente línea móvil
+        <span class="por-12-meses">
 
+          - $6.400 por 12 meses
+        </span>
+        </p>
+      <button class="landing_button">¡Lo quiero!</button>
+
+    </div>
+  </section>
+
+  <section class="landing_third-section">
+    <h2 class="gris-text50  landing_third-section">La máxima experiencia en entretenimiento</h2>
+    <p>Conocé la <a href="#">
+        guía de canales
+      </a> </p>
+
+</main>
 </section>
 <!-- Script Slider -->
 <script>

@@ -4,9 +4,9 @@
 
 .swiper {
 
-    width: 380px;
+    /* width: 380px;
     height: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; */
 }
 
 
@@ -22,8 +22,8 @@ ul {
 }
 
 footer {
-    margin-top: 30px;
-    padding-left: 10px;
+    margin-top: 10px;
+    /* padding-left: 10px; */
     display: flex;
     justify-content: baseline;
     align-items: flex-start;
@@ -37,15 +37,22 @@ footer {
 
 
 footer h1 {
-    color: var();
+    color: var(--white);
+    background-color:var(--white);
+    padding: 10px;
+    width: 100%;
 }
 
 footer li {
     list-style: none;
     color: var(--white);
 }
+footer ul{
 
+    padding-left: 10px;
+}
 .footer_main-ul ul {
+
     list-style: none;
     color: var(--white);
 }
@@ -92,8 +99,12 @@ footer div {
 .Telecom-img{
     width: 168px;
     height: 33px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-top: 10px;
+    display: block;
+    background-size: 60%;
+    background-color: var(--white);
+
 
 }
 
@@ -121,12 +132,13 @@ footer div {
     height: 50px;
 
     width: 100vw;
-    background-color: var(--grey);
+    background-color: var(--white);
 }
 
 .footer_telecom-section img {
     height: 23px;
     margin: 10px;
+
 }
 
 .footer_first-section {
