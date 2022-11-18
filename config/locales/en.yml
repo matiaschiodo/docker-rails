@@ -10,6 +10,14 @@ en:
   Sign_up: Sign up
   Unhappy: Unhappy
   Update: Update
+  activerecord:
+    attributes:
+      user:
+        current_password: current password
+        email: email
+        password: Password
+        password_confirmation: password confirmation
+        remember_me: remember me
   budgets:
     form:
       expiration_date: Expiration date

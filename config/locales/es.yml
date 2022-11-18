@@ -10,6 +10,14 @@ es:
   Sign_up: Registrarse
   Unhappy: No estas conforme?
   Update: Guardar cambios
+  activerecord:
+    attributes:
+      user:
+        current_password: Contraseña actual
+        email: Email
+        password: Contraseña
+        password_confirmation: Confirmar contraseña
+        remember_me: Recuerdame
   budgets:
     form:
       expiration_date: Fecha de expiracion
