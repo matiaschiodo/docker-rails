@@ -9,9 +9,17 @@
 }
 
 
-.field .field_login {
+.field_login #user_email, #user_password {
     background-color: var(--Content3);
     border-radius: 4.8px 4.8px 0px 0px;
+}
+
+.field_login #user_email, #user_password:focus-visible {
+    color: var(--Green);
+}
+
+.field_login #user_email, #user_password:active {
+    border-color: var(--Background);
 }
 
 .text_login {
@@ -35,7 +43,7 @@ div.title {
 
 }
 
-#login_button {
+#login_button input {
     background-color: var(--Green);
     width: 319px;
     height: 40px;
@@ -43,6 +51,7 @@ div.title {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
 }
 
 .items_login {
@@ -77,13 +86,14 @@ div.title {
     div.title {
         padding-bottom: 40px;
     }
-    .field {
+    .field_login #user_email, #user_password {
         Width: 360px;
+        border-color: var(--Content1);
     }
     #iniciar_sesion {
         display: none;
     }
-    #login_button {
+    #login_button input {
         width: 360px;
     }
     .items_login {
@@ -99,10 +109,11 @@ div.title {
     div.title {
         padding-bottom: 32px;
     }
-    .field {
+    .field_login #user_email, #user_password {
         width: 319px;
+        border-color: var(--Background);
     }
-    #login_button {
+    #login_button input {
         width: 319px;
     }
     .items_login {
