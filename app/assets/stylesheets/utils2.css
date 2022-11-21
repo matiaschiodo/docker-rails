@@ -30,5 +30,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* background: var(--Background); */
+    color: var(--Gris-text-50);
+}
+body{
+    background: var(--Background);
+}
+.active{
+    display: flex;
 }

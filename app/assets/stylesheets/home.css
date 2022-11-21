@@ -10,10 +10,16 @@ main {
     width: 380px;
     color: var(--Gris-text-50);
     background: var(--Background);
+    padding-bottom: 15px;
+    /* responsive desktop */
+
+    width: 100vw;
+
 }
 
 .landing_first-section,
-.landing_card-section,.landing_third-section {
+.landing_card-section,
+.landing_third-section {
     width: 100%;
     /* margin-left: 10px; */
     display: flex;
@@ -21,32 +27,61 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding-top: 5px;
 
 }
 
 .slider-img {
     /* margin-left: 50px; */
+    /* width: 90%; */
+    display: flex;
+    align-self: center;
+    /* margin: 15px;
+    margin-left: 30px; */
     width: 100%;
 }
 
-.swiper {
+.slider-img2 {
+    margin-left: 40px;
+    /* width: 90%; */
+    display: flex;
+    align-self: center;
+    /* margin: 15px;
+    margin-left: 30px; */
+    width: 100%;
+    width: 1358.57px;
+    /* height: 232px; */
+}
+
+.swiper1 {
     height: 200px;
     width: 380px;
-
+    display: none;
     /* width: 380px;
     height: 300px;
     margin-bottom: 30px; */
 }
 
+/* responsive desktop */
+
+.swiper2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 232px;
+
+}
+
 .landing_h2 {
-margin-top: 20px;
+    margin-top: 20px;
     width: 334px;
     height: 58px;
     font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
 
     /* Heading/Heading 4 */
     font-family: 'Work Sans';
@@ -56,6 +91,13 @@ line-height: 29px;
     line-height: 29px;
     /* or 120% */
     text-align: center;
+
+    /* responsive desktop */
+    /* width: 904px;
+    font-size: 32px;
+    line-height: 38px;
+
+    height: 39px */
 }
 
 .landing_p {
@@ -71,6 +113,11 @@ line-height: 29px;
     line-height: 24px;
     /* or 150% */
     text-align: center;
+    /* responsive desktop */
+    /* width: 723px;
+    height: 20px;
+    font-weight: 500;
+    line-height: 19px; */
 }
 
 .landing_planes-flow {
@@ -86,9 +133,25 @@ line-height: 29px;
     flex: none;
     order: 0;
     flex-grow: 0;
+    /* responsive desktop */
+    /* width: 423.4px;
+    height: 56px;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+
 }
 
-.landing_planes-flow a {
+.color-green {
+    color: var(--Green);
+
+}
+
+.flow:hover {
+    cursor: pointer;
+    color: var(--Green);
+}
+
+.landing_planes-flow p {
     text-decoration: none;
     color: var(--Gris-text-50);
     width: 71px;
@@ -98,7 +161,7 @@ line-height: 29px;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -106,28 +169,40 @@ line-height: 29px;
     color: var(--Green);
 
 }
-.landing_card-section{
-    /* width: 320px; */
-/* height: 143px; */
+
+.landing_card-section {
+    /* responsive-desktop*/
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+
 }
+
+.landing_card-section img {
+    width: 552px;
+    height: 352px;
+}
+
 .landing_card-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-    /* gap: 12px; */
 
     width: 320px;
-    height: 198px;
+    height: 100%;
 
     /* Content2 */
     background: #2A2E34;
+    /* responsive-desktop */
 
-    /* Inside auto layout */
-    /* flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;     */
+    /* width: 456px;
+    height: 224px;
+    gap: 8px; */
+}
+
+.landing_little-container {
+    display: flex;
 }
 
 .card-title {
@@ -183,6 +258,12 @@ line-height: 29px;
     align-self: center;
     justify-content: center;
     color: var(--blue);
+    /* responsive-desktop */
+    /* width: 416px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 24px; */
+
 }
 
 .por-12-meses {
@@ -205,40 +286,249 @@ line-height: 29px;
     /* Green */
     background: #21D3A3;
     border-radius: 4px;
+    /* responsive-desktop */
+    /* width: 380px;
+    margin-left: 18px;
+    font-size: 24px;
+    line-height: 26px;
+    color: var(--Content1); */
+
+
+
+    /* margin-bottom: 100px; */
+
 }
-.landing_third-section{
+
+.landing_third-section {
     /* width: 320px;
 height: 58px; */
-/* Heading/Heading 4 */
-font-family: 'Work Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 29px;
-/* or 120% */
-text-align: center;
+    /* Heading/Heading 4 */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* or 120% */
+    text-align: center;
 
-/* Gris-text/50 */
-color: #F3F3F3;
+    /* Gris-text/50 */
+    color: #F3F3F3;
+    /* responsive-desktop */
+    margin-top: 20px;
+}
+
+.landing_third-section h2 {
+    /* responsive-desktop */
+    /* width: 672px;
+    height: 39px;
+    font-size: 32px;
+    line-height: 38px; */
 
 }
-.landing_third-section p{
+
+.landing_third-section p {
     width: 320px;
-height: 24px;
+    height: 24px;
 
-/* Body/Body */
-font-family: 'Work Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-text-align: center;
+    /* Body/Body */
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
 
-/* Gris-text/50 */
-color: #F3F3F3;
+    /* Gris-text/50 */
+    color: #F3F3F3;
+
+
+    /* responsive-desktop */
+
+    /* width: 204px;
+    height: 39px;
+    font-weight: 500;
+
+    line-height: 19px; */
+
 
 }
-.landing_third-section a{
+
+.footer-sticky {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 24px;
+    gap: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    background: var(--Content3);
+    /* display: none; */
+
+}
+
+.footer-sticky-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 13px 24px;
+    gap: 30px;
+
+    position: sticky;
+    bottom: 0;
+
+    height: 46px;
+    background: var(--Content3);
+    /* responsive-desktop */
+    /* width: 100%; */
+    display: none;
+}
+
+
+.landing_third-section a {
     color: var(--Green);
+}
+
+.footer-sticky a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.venta-telefonica {
+    text-decoration: none;
+    color: var(--Gris-text-50);
+
+}
+
+.footer-sticky-desktop a {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.mis-presupuestos {
+    color: var(--blue);
+}
+
+@media (max-width: 700px) {
+    .landing_little-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing_card-section img {
+        width: 320px;
+        height: 143px;
+    }
+
+    #swiper2 {
+        display: none;
+    }
+
+    #swiper1 {
+        display: flex;
+    }
+}
+
+@media (min-width: 700px) {
+
+    #swiper1 {
+        display: none;
+    }
+
+    .swiper2 {
+        display: block;
+    }
+
+    .landing_h2 {
+        width: 904px;
+        font-size: 32px;
+        line-height: 38px;
+
+        height: 39px
+    }
+
+    .landing_p {
+        width: 723px;
+        height: 20px;
+        font-weight: 500;
+        line-height: 19px;
+    }
+
+    .landing_planes-flow {
+        width: 423.4px;
+        height: 56px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .landing_card-section {
+        /* responsive-desktop*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .landing_card-container {
+        width: 456px;
+        height: 224px;
+        gap: 8px;
+    }
+
+    .linea-movil {
+        width: 416px;
+        height: 24px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .landing_button {
+        width: 380px;
+        margin-left: 18px;
+        font-size: 24px;
+        line-height: 26px;
+        color: var(--Content1);
+    }
+
+    .landing_third-section {
+        margin-top: 20px;
+
+    }
+
+    .landing_third-section h2 {
+        /* responsive-desktop */
+        width: 672px;
+        height: 39px;
+        font-size: 32px;
+        line-height: 38px;
+
+    }
+
+    .landing_third-section p {
+        width: 204px;
+        height: 39px;
+        font-weight: 500;
+
+        line-height: 19px;
+    }
+
+    .footer-sticky-desktop {
+        display: flex;
+        width: 100%;
+        gap: 30px;
+
+
+    }
+
+    .footer-sticky {
+        display: none;
+    }
 }

@@ -51,7 +51,7 @@
   const mobileMenu = document.getElementById('menuMobile');
 
   menuHamIcon.addEventListener('click', toggleMobileMenu);
-  mobileMenu.addEventListener('click', closeMobileMenu)
+  // mobileMenu.addEventListener('click', closeMobileMenu)
 
   function toggleMobileMenu() {
     menuMobile.classList.toggle('inactive');
@@ -62,14 +62,37 @@
 <main>
 
   <section class="gris-text50 landing_first-section">
-    <div class="swiper">
+    <div id="swiper1" class="swiper swiper1">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">
           <img class="slider-img" src="/images/slider.png" alt="img-slider">
         </div>
-        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <div id="swiper2" class="swiper swiper2">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="slider-img2" src="/images/banner1.png" alt="img-slider">
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img2" src="/images/banner2.png" alt=img-slider">
+        </div>
         <div class="swiper-slide">Slide 3</div>
         ...
       </div>
@@ -84,34 +107,80 @@
       <div class="swiper-scrollbar"></div>
     </div>
 
+
     <h2 class="landing_h2">Encontrá en Flow todo lo que te gusta</h2>
     <p class="landing_p">TV en vivo, música, deportes, películas, series on-demand y mucho más </p>
     <div class="landing_planes-flow">
-      <a class="flow-full" href="#">
+      <p class="flow" id="flow-full" class="flow-full" href="#">
         <span class="flow-full">
 
           Flow full
         </span>
-      </a>
-      <a href="#">Flow flex</a>
-      <a href="#">Flow HD</a>
+      </p>
+      <p class="flow" id="flow-flex" href="#">Flow flex</p>
+      <p class="flow" id="flow-HD" href="#">Flow HD</p>
 
     </div>
   </section>
-  <section class="landing_card-section">
+  <section class="landing_card-section full-section ">
     <img src="/images/landing-img.png" alt="img-card">
     <div class="landing_card-container">
-      <p class="card-title">Internet 100 MB + </p>
-      <p class="card-title">Flow Full</p>
-      <p class="card-subtitle"> $4.790  <span class="final-por-mes">
-        final por mes
-      </span> </p>
+      <div class="landing_little-container">
+
+        <p class="card-title">Internet 100 MB + </p>
+        <p class="card-title">Flow Full</p>
+      </div>
+      <p class="card-subtitle"> $4.790 <span class="final-por-mes">
+          final por mes
+        </span> </p>
       <p class="Linea-movil">Cliente línea móvil
         <span class="por-12-meses">
 
           - $6.400 por 12 meses
         </span>
-        </p>
+      </p>
+      <button class="landing_button">¡Lo quiero!</button>
+
+    </div>
+  </section>
+  <section class="landing_card-section flex-section inactive">
+    <img src="/images/landing2-img.png" alt="img-card">
+    <div class="landing_card-container">
+      <div class="landing_little-container">
+
+        <p class="card-title">Internet 100 MB + </p>
+        <p class="card-title">Flow Flex Abono</p>
+      </div>
+      <p class="card-subtitle"> $3.280 <span class="final-por-mes">
+          final por mes
+        </span> </p>
+      <p class="Linea-movil">Cliente línea móvil
+        <span class="por-12-meses">
+
+          - $5.200 por 12 meses
+        </span>
+      </p>
+      <button class="landing_button">¡Lo quiero!</button>
+
+    </div>
+  </section>
+  <section class="landing_card-section HD-section inactive">
+    <img src="/images/landing3-img.png" alt="img-card">
+    <div class="landing_card-container">
+      <div class="landing_little-container">
+
+        <p class="card-title">Internet 50 MB + </p>
+        <p class="card-title">Flow Clasico HD</p>
+      </div>
+      <p class="card-subtitle"> $2.460 <span class="final-por-mes">
+          final por mes
+        </span> </p>
+      <p class="Linea-movil">Cliente línea móvil
+        <span class="por-12-meses">
+
+          - $3.800 por 12 meses
+        </span>
+      </p>
       <button class="landing_button">¡Lo quiero!</button>
 
     </div>
@@ -123,36 +192,93 @@
         guía de canales
       </a> </p>
 
+  </section>
+  <section class="footer-sticky">
+    <a class="venta-telefonica" href="#">Venta teléfonica</a> | <a class="mis-presupuestos" href="#">Mis Prespuestos</a>
+  </section>
+  <section class="footer-sticky-desktop">
+    <a class="venta-telefonica" href="#">Venta teléfonica 0800 222 3333</a> | <a class="mis-presupuestos" href="#">Mis
+      Prespuestos</a>
+  </section>
 </main>
-</section>
 <!-- Script Slider -->
 <script>
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
+  window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      // direction: 'vertical',
+      loop: true,
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
   });
+</script>
+<!-- Script Cards -->
+<script>
+  const flowFull = document.getElementById('flow-full');
+  const flowFlex = document.getElementById('flow-flex');
+  const flowHD = document.getElementById('flow-HD');
+  const flexSection = document.querySelector('.flex-section')
+  const HdSection = document.querySelector('.HD-section')
+  const fullSection = document.querySelector('.full-section')
+
+  const actionFlow = () => {
+
+    flexSection.style.display = 'none'
+    HdSection.style.display = 'none'
+    fullSection.style.display = 'flex'
+
+    flowFull.style.color = '#21D3A3'
+    flowFlex.style.color = '#F3F3F3'
+    flowHD.style.color = '#F3F3F3'
+
+  }
+  flowFull.addEventListener('click', actionFlow)
+
+  const actionFlex = () => {
+    console.log('se activo flex')
+    flexSection.style.display = 'flex'
+    HdSection.style.display = 'none'
+    fullSection.style.display = 'none'
+
+    flowFlex.style.color = '#21D3A3'
+    flowFull.style.color = '#F3F3F3'
+    flowHD.style.color = '#F3F3F3'
+
+  }
+  flowFlex.addEventListener('click', actionFlex)
+
+  const actionHD = () => {
+    console.log('se activo HD')
+
+    flexSection.style.display = 'none'
+    HdSection.style.display = 'flex'
+    fullSection.style.display = 'none'
+    flowHD.style.color = '#21D3A3'
+    flowFlex.style.color = '#F3F3F3'
+
+  }
+  flowHD.addEventListener('click', actionHD)
 </script>
 <footer class="footer-mobile">
 
 
-  <h1><img class="Telecom-img" src="./images/icon-telecom.png" alt=""></h1>
+  <h1><img class="Telecom-img" src="./images/icon-telecom2.png" alt=""></h1>
   <ul>
     <li>Acerca de</li>
     <li>Asistencia</li>
@@ -168,7 +294,7 @@
   </ul>
   <section>
     <ul class="icons-list">
-      <li><img class="img img2" src="./images/facebbok.png" alt=""></li>
+      <li><img class="img facebook img2" src="./images/facebook-icon2.png" alt=""></li>
       <li><img class="img" src="./images/twitter.png" alt=""></li>
       <li><img class="img" src="./images/linkedin.png" alt=""></li>
     </ul>
@@ -188,7 +314,7 @@
 
 <footer class="footer-desktop">
   <section class="footer_telecom-section">
-    <img src="./images/icon-telecom.png" alt="">
+    <img src="./images/icon-telecom2.png" alt="">
   </section>
   <section class="footer_first-section">
 
@@ -223,7 +349,7 @@
         Arrenpentimiento
       </li>
       <ul class="icons-list">
-        <li><img class="img img2" src="./images/facebbok.png" alt=""></li>
+        <li><img class="img facebook img2" src="./images/facebook-icon2.png" alt=""></li>
         <li><img class="img img2" src="./images/twitter.png" alt=""></li>
         <li><img class="img img2" src="./images/linkedin.png" alt=""></li>
       </ul>
