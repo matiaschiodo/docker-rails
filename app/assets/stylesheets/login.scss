@@ -14,9 +14,10 @@
         background-color: var(--Content3);
         border-radius: 4.8px 4.8px 0px 0px;
         height: 40px;
+        color: var(--Gris-text-50);
 
         &:focus-visible {
-            color: var(--Green);
+            color: var(--Gris-text-50);
         }
         &:active {
             border-color: var(--Background);
@@ -33,6 +34,7 @@
 
 .text_login {
     color: var(--Gris-text-50);
+    font-size: 20px;
 }
 
 .login_title {
@@ -52,15 +54,18 @@ div.title {
 
 }
 
-#login_button input {
-    background-color: var(--Green);
-    width: 319px;
-    height: 40px;
-    border-radius: 4.8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
+#login_button {
+    font-size: 20px;
+        input {
+            background-color: var(--Green);
+            width: 319px;
+            height: 40px;
+            border-radius: 4.8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+        }
 }
 
 .items_login {
@@ -92,10 +97,10 @@ div.title {
 
 @media (min-width: 1001px) {
     .main_login {
-    Width: 552px;
-    Height: 690px;
-    margin: auto;
-    }
+        Width: 552px;
+        Height: 690px;
+        margin: auto;
+        }
     div.title {
         padding-bottom: 40px;
     }
