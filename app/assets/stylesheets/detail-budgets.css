@@ -1,8 +1,4 @@
-.budgets-section{
-}
-/* .detail-1erSection,.detail-plan,.detail-combo,.detail-explain{
-    width: 100%;
-} */
+
 
 .detail-presupuesto {
     display: inline-block;
@@ -107,8 +103,106 @@
 .price-list{
     color: var(green)!important;
 }
+.section-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.budgets-button{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+
+width: 340px;
+height: 40px;
+border: none;
+/* Green */
+color: #121212;
+background: #21D3A3;
+border-radius: 4.8px;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+}
+.products-button{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8px 16px;
+align-items: center;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+background: var(--background);
+/* Green */
+color: #21D3A3;
+border-radius: 4.8px;
+border:1px solid #21D3A3;
+width: 340px;
+height: 40px;
+}
+
+.modal-dialog2{
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 300px;
+height: 631px;
+
+/* Content3 */
+background: #32373E;
+border-radius: 4px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 320px;
+    height: 100%;
+    background: #2A2E34;
+    width: 263px;
+    height: 193px;}
+    .landing_button2{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    border: none;
+    width: 220px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background: #21D3A3;
+    border-radius: 4px;
+    }
+    .myButton{
+        color:var(--Content3);
+        background: var(--Green);
+    }
+    .myButton2{
+        color:var(--Green);
+        background: var(--Content3);
+        border:solid 1px var(--Green) ;
+    }
+    .modal_footer-box{
+        justify-content: flex-end;
+    }
 @media (min-width: 700px) {
     .detail-1erSection,.detail-plan,.detail-combo,.detail-explain{
         width: 100%;
+    }
+    .section-buttons{
+        flex-direction: row;
+
     }
 }

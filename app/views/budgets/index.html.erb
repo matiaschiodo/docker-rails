@@ -31,7 +31,7 @@
 
               </div> -->
               <div class="modal-footer">
-                <p>Ordenar por :</p>
+                <p class="modal-dialog-ordenar">Ordenar por :</p>
 
                 <button type="text" class="btn" value="close">
                   <img src="/images/close-icon.png" alt="">
@@ -83,10 +83,31 @@
         <%#= budget.total %>
         <li class="detail-li-price">$2.490</li>
         <li class="detail-li-price">
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">¿Eliminar producto?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  El producto seleccionado se eliminará de tu presupuesto, puedes volver a agregarlo luego </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn  btn-success myButton2" data-dismiss="modal">Cancelar</button>
+                  <button type="button" class="btn btn-success myButton">Si, eliminar</button>
+                </div>
+              </div>
+            </div>
+          </div>
           <%#= link_to 'Destroy', budget, method: :delete, data: { confirm: 'Are you sure?' } %>
-          <span class="material-symbols-outlined budgets_delete-icon">
+          <span class="material-symbols-outlined budgets_delete-icon " data-toggle="modal" data-target="#exampleModal">
             delete
-          </span></li>
+          </span>
+        </li>
       </ul>
     </div>
     <hr>
