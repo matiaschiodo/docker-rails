@@ -1,4 +1,3 @@
-
 .main_login {
     background-color: var(--Content1);
     position: relative;
@@ -93,6 +92,18 @@ div.title {
     border-radius: 100%;
 }
 
+.footer_login {
+    background-color: var(--Content3);
+    height: 64px;
+    color: var(--Gris-text-50);
+    font-size: 20px;
+
+    .login_footer_desktop p,
+    .login_footer_mobile p {
+        margin-bottom: 0;
+    }
+}
+
 
 
 @media (min-width: 1001px) {
@@ -100,6 +111,7 @@ div.title {
         Width: 552px;
         Height: 690px;
         margin: auto;
+        margin-bottom: 77px;
         }
     div.title {
         padding-bottom: 40px;
@@ -113,6 +125,13 @@ div.title {
     }
     #login_button input {
         width: 360px;
+    }
+    .login_footer_mobile {
+        display: none;
+    }
+    .login_footer_desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -135,5 +154,17 @@ div.title {
     
     #linea_login {
         width: 141.24px;
+    }
+
+    .footer_login {
+        margin: auto;
+        .login_footer_desktop {
+            display: none;
+        }
+        .login_footer_mobile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+        }
     }
 }
