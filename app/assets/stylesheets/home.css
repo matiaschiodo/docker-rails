@@ -416,7 +416,39 @@ height: 58px; */
 .mis-presupuestos {
     color: var(--blue);
 }
+/* Modal */
+.modal-landing{
+    width: 300px;
+height: 201px;
 
+}
+.modal-box-landing{
+    color: var(--Green);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.modal-header{
+    border-bottom: 0px;
+}
+.modal-footer{
+    border:  none 0px;
+}
+.modal-footer-landing{
+    display: flex;
+justify-content: flex-end;
+}
+.modal-1er-box{
+    color: var(--Green);
+    display: flex;
+    align-items: center;
+    border: solid;
+    justify-content: space-between;
+    padding: 3px 10px;
+}
+.arrow-modal{
+    margin-bottom: 8px;
+}
 @media (max-width: 700px) {
     .landing_little-container {
         display: flex;
