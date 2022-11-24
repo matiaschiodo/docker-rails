@@ -97,10 +97,13 @@ div.title {
     height: 64px;
     color: var(--Gris-text-50);
     font-size: 20px;
+    display: grid;
+    align-items: center;
 
     .login_footer_desktop p,
     .login_footer_mobile p {
         margin-bottom: 0;
+        color: var(--Gris-text-50);
     }
 }
 
@@ -112,6 +115,7 @@ div.title {
         Height: 690px;
         margin: auto;
         margin-bottom: 77px;
+        margin-top: 76px;
         }
     div.title {
         padding-bottom: 40px;
@@ -126,14 +130,29 @@ div.title {
     #login_button input {
         width: 360px;
     }
-    .login_footer_mobile {
-        display: none;
-    }
-    .login_footer_desktop {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+    .footer_login {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        .login_footer_mobile {
+            display: none;
+        }
+        .login_footer_desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
 
+            #desktop_footer1 {
+                display: grid;
+                justify-items: start;
+                margin-left: 155px;
+            }
+            #desktop_footer2 {
+                display: grid;
+                justify-items: end;
+                margin-right: 157px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -165,6 +184,16 @@ div.title {
             display: grid;
             grid-template-columns: 1fr 1fr;
             
+            #mobile_footer1 {
+                display: grid;
+                justify-items: start;
+                margin-left: 24px;
+            }
+            #mobile_footer2 {
+                display: grid;
+                justify-items: end;
+                margin-right: 24px;
+            }
         }
     }
 }

@@ -1,13 +1,11 @@
 .sign_up {
     background-color: var(--black);
     padding: 20px;
-}
 
-.sign_up {
     p, label, em {
-    color: var(--Gris-text-50);
-    font-size: 20px;
-    }
+        color: var(--Gris-text-50);
+        font-size: 20px;
+        }
 }
 
 .logo_signup { 
@@ -78,12 +76,29 @@
 
 }
 
+.footer_signup {
+    background-color: var(--Content3);
+    height: 64px;
+    color: var(--Gris-text-50);
+    font-size: 20px;
+    display: grid;
+    align-items: center;
+
+    .signup_footer_desktop p,
+    .signup_footer_mobile p {
+        margin-bottom: 0;
+        color: var(--Gris-text-50);
+    }
+}
+
 @media (min-width: 641px) {
     .sign_up {
         background-color: var(--Background);
         margin: auto;
         width: 1128px;
         height: 690px;
+        margin-top: 76px;
+        margin-bottom: 77px;
     }
     .logo_signup {
         padding-top: 44px;
@@ -136,6 +151,31 @@
         margin-left: 168px;
     }
 
+    .signup_footer_mobile {
+        display: none;
+    }
+    .footer_signup {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        .signup_footer_desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            #desktop_footer1 {
+                display: grid;
+                justify-items: start;
+                padding-left: 155px;
+            }
+            #desktop_footer2 {
+                display: grid;
+                justify-items: end;
+                padding-right: 157px;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -145,5 +185,23 @@
         justify-content: center;
         align-items: center;
     }
-}
+    .signup_footer_desktop {
+        display: none;
+    }
+    .signup_footer_mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
+        #mobile_footer1 {
+            display: grid;
+            justify-items: start;
+            margin-left: 24px;
+        }
+        #mobile_footer2 {
+            display: grid;
+            justify-items: end;
+            margin-right: 24px;
+        }
+    }
+
+}
