@@ -165,11 +165,13 @@ main {
     line-height: 24px;
 }
 
-.flow-full {
-    color: var(--Green);
+.flow-full2 {
+    /* color: var(--Green); */
 
 }
-
+.flow-full2:hover {
+    color: #21D3A3;
+}
 .landing_card-section {
     /* responsive-desktop*/
     /* display: flex;
