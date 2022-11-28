@@ -1,4 +1,4 @@
-  .inactive {
+ .inactive {
     display: none;
   }
   
@@ -6,12 +6,16 @@
     background-color: var(--Content2);
     width: 100%;
     height: 56px;
+    display: flex;
+    flex-wrap: nowrap!important;
   }
 
   .navbar-home {
      ul {
       list-style: none;
       display: flex;
+      align-items: center;
+      margin-bottom: 0!important;
      }
      ul li {
       padding-inline: 24px;
@@ -19,6 +23,11 @@
     ul li a {
       color: var(--Gris-text-50);
       text-decoration: none;
+
+      &:hover {
+        color: var(--hover-Green);
+        text-decoration: none;
+      }
     }
   }
   
@@ -34,8 +43,15 @@
         text-decoration: none;
         color: var(--Gris-text-50);
       }
+      a:hover {
+        color: var(--hover-Green);
+        text-decoration: none;
+      }
       span {
         color: var(--Gris-text-50);
+      }
+      p {
+        margin-bottom: 0!important;
       }
   }
 
@@ -73,9 +89,12 @@
           border: none;
       }
     }
-    .my_account span {
+    .my_account {
+      padding-right: 156px;
+      span {
         padding: 0 18px;
     }
+  }
 }
 
 @media (max-width: 650px) {
