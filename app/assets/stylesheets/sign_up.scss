@@ -72,6 +72,10 @@
         background-color: var(--Green);
         font-size: 20px;
         color: var(--black);
+
+        &:active {
+            background-color: var(--hover-Green);
+        }
     }
 
 }
@@ -83,6 +87,14 @@
     font-size: 20px;
     display: grid;
     align-items: center;
+
+    a {
+        color: var(--Gris-text-50);
+        &:hover {
+            color: var(--Gris-text-300);
+            text-decoration: none;
+        }
+    }
 
     .signup_footer_desktop p,
     .signup_footer_mobile p {

@@ -64,6 +64,10 @@ div.title {
             justify-content: center;
             align-items: center;
             font-weight: 500;
+
+            &:active {
+                background-color: var(--hover-Green);
+            }
         }
 }
 
@@ -100,10 +104,17 @@ div.title {
     display: grid;
     align-items: center;
 
+    a {
+        color: var(--Gris-text-50);
+        &:hover {
+            color: var(--Gris-text-300);
+            text-decoration: none;
+        }
+    }
+
     .login_footer_desktop p,
     .login_footer_mobile p {
         margin-bottom: 0;
-        color: var(--Gris-text-50);
     }
 }
 
