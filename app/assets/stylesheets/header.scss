@@ -58,6 +58,42 @@
   .mobile_menu span {
       color: var(--Gris-text-50);
       cursor: pointer;
+      padding-top: 6px;
+  }
+
+  #modal_header {
+    width: 212px;
+    height: 180px;
+    .modal-content {
+      margin-top: 57px;
+      background-color: none;
+    }
+    .modal-body {
+      padding: 8px;
+      padding-left: 16px;
+      background-color: var(--Content3);
+    }
+    .modal-body ul {
+      margin-bottom: 0!important;
+    }
+    .modal-body ul li {
+      list-style: none;
+      font-size: 12.8px;
+    }
+    a {
+      color: var(--Gris-text-50);
+      
+      &:hover {
+        color: var(--hover-Green);
+        text-decoration: none;
+      }
+    }
+    #list_header {
+      margin-bottom: 16px;
+    }
+    #list_header1 {
+      margin-bottom: 8px;
+    }
   }
 
 @media (min-width: 651px) {
