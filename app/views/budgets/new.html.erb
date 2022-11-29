@@ -1,8 +1,14 @@
-<h1><%= t 'budgets.new_budget' %></h1>
+<h1 class="nuevo-budget"><%= t 'budgets.new_budget' %></h1>
 
 <%= render 'form', budget: @budget %>
 
-<%= link_to t('common.back'), budgets_path %>
+
+  
+  <span class="material-symbols-outlined detail-icon">
+    arrow_back
+    <%= link_to t('common.back'), budgets_path %>
+  </span>
+
 <section class="budgets-section">
   <section class="detail-1erSection">
 
