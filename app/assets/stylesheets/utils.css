@@ -2,23 +2,35 @@
     --grey: #D9D9D9;
     --black: #000000;
     --white: #FFFFFF;
-    --dark-grey: #667080;
-    --soft-Grey: #9197A1;
-    --navbar-grey: #D9D9D9; 
-    --navbar-white: #EEF1F4;
-    --yellow: #F6CA56;
-    --light-yellow: #FFFAEF;
-    --mostaza: #936B06;
-    --darkest-grey: #2A2E34;
-    --background-black: #1E1E1E;
-    --neon-green: #21D3A3;
+    --soft-gray: #667080;
+    --dark-Grey: #9197A1;
+    --Gris-text-50: #F3F3F3;
+    --Gris-text-100: #DDDDDD;
+    --Gris-text-200: #C6C6C6;
+    --Gris-text-300: #B0B0B0;
+    --Gris-text-400: #9B9B9B;
+    --Gris-text-500: #868686;
+    --Gris-text-600: #727272;
+    --Gris-text-700: #5E5E5E;
+    --Gris-text-800: #4B4B4B;
+    --Gris-text-900: #393939;
+    --Background: #121212;
+    --Content1: #191919;
+    --Content2: #2A2E34;
+    --Content3: #32373E;
+    --Green: #21D3A3;
+    --Blue: #80A5FF;
+    --Pink: #F0949F;
+    --hover-Green: #21d3a3b0;
+}
 
-  }
-  
-  
   * {
       font-family: 'Work Sans', sans-serif;
       box-sizing: border-box;
       padding: 0;
       margin: 0;
+  }
+
+  body {
+    background-color: var(--Background);
   }

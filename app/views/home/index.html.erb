@@ -1,49 +1,63 @@
 <header>
 
-  <nav class="navbar">
+    <header>
+        <nav class="navbar">
 
-    <div id="menu"><span class="material-symbols-outlined">
-        menu
-      </span>
-    </div>
+            <div class="mobile_menu">
 
-    <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
-    </div>
-    <div class="navbar-home">
-      <ul>
-        <li><a href="/">Suscripciones</a></li>
-        <li><a href="/">Tienda</a></li>
-        <li><a href="/">TV y Streaming</a></li>
-        <li><a href="/budgets">Presupuestos</a></li>
-        <li><a href="/">Contacto</a></li>
-      </ul>
-    </div>
-    <div class="search-button">
-      <span class="material-symbols-outlined" id="search">
-        search
-      </span>
-    </div>
-    <div class="navbar-user"><a href="/my_accounts"><span class="material-symbols-outlined" id="user">
-          account_circle
-        </span>
-        <%= link_to '', destroy_user_session_path, data: {turbo_method: :delete} %></a>
-    </div>
+                <span data-toggle="modal" data-target="#exampleModal" class="material-symbols-outlined">
+                    menu
+                    </span>
 
-    <div class="mobile-menu inactive" id="menuMobile">
-      <ul>
-        <li id="lista-menu"><a href="/">Menú</a></li>
-        <li id="lista1"><a href="/">Suscripciones</a></li>
-        <li id="lista1"><a href="/">Tienda</a></li>
-        <li id="lista1"><a href="/">TV y Streaming</a></li>
-        <li id="lista1"><a href="">Presupuestos</a></li>
-        <li id="lista1"><a href="/">Contacto</a></li>
-      </ul>
-    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" id="modal_header">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <ul>
+                                        <li id="list_header"><a href="/">Suscripciones</a></li>
+                                        <li id="list_header"><a href="/">Tienda</a></li>
+                                        <li id="list_header"><a href="/">TV y Streaming</a></li>
+                                        <li id="list_header"><a href="/">Contacto</a></li>
+                                        <li id="list_header1"><a href="/budgets">Mis presupuestos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
 
-  </nav>
+            <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
+            </div>
+            <div class="navbar-home">
+                <ul>
+                <li><a href="/">Suscripciones</a></li>
+                <li><a href="/">Tienda</a></li>
+                <li><a href="/">TV y Streaming</a></li>
+                <li><a href="/budgets">Presupuestos</a></li>
+                <li><a href="/">Contacto</a></li>
+                </ul>
+            </div>
 
-
-</header>
+            <div class="input-search">
+                <div class="input-search-box">
+                    <input type="text" placeholder="Buscar...">
+                    <a href=""><span class="material-symbols-outlined">
+                                search
+                        </span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="my_account">
+                <a href="">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                        </span>
+                    <p>Mi cuenta</p>
+                </a>
+            </div>
+        </nav>
+    </header>
 
 <!-- Script header -->
 <script>

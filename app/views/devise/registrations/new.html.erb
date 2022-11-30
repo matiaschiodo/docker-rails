@@ -1,29 +1,74 @@
-<h2><%=t('Sign_up')%></h2>
+<main class="sign_up">
+
+  <div class="logo_signup">
+      <h2><%=t('Sign_up')%></h2>
+      <img src="/images/Flow_logo_grande.png">
+  </div>
+  <div class="title_signup">
+      <p>Datos de cuenta</p>
+  </div>
+
+<!-- FORMULARIO -->
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <div class="field_signup1">
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+      <div class="signup_email">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+      <div class="signup_password">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password" %>
+      </div>
 
-  <div class="actions">
+      <div class="signup_confirmation">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      </div>
+    </div>
+
+    <p id="datos_title">Datos personales</p>
+      <div class="datos_signup">
+        <form>
+          <div id="columna1">
+            <p>Nombre</p><input type="name" id="name" >
+          </div>
+          <div id="columna2">
+            <p>Apellido</p><input type="last-name" id="apellido">
+          </div>
+          <div id="columna1">
+            <p>Teléfono</p><input type="phone" id="telefono">
+          </div>
+          <div id="columna2">  
+            <p>Dirección</p><input type="adress" id="direccion">
+          </div> 
+        </form>
+      </div>
+
+  <div class="actions_signup">
     <%= f.submit t('Sign_up') %>
   </div>
+
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</main>
+
+<footer class="footer_signup">
+  <div class="signup_footer_desktop">
+    <p id="desktop_footer1"><a href="#">¿Necesitas ayuda?</a></p>
+    <p id="desktop_footer2"><a href="#">2022 - Telecom Argentina S.A.</a></p>
+  </div>
+  <div class="signup_footer_mobile">
+    <p id="mobile_footer1"><a href="#">Ayuda</a></p>
+    <p id="mobile_footer2"><a href="#">Telecom Argentina</a></p>
+  </div>
+</footer>

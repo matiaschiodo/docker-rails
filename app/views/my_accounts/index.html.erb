@@ -1,0 +1,67 @@
+<main id="my-accounts">
+
+    <div class="myaccounts_title">
+        <a href=""><span class="material-symbols-outlined">
+            arrow_back
+            </span></a>
+        <p>Mis datos</p>
+        <a href="" id="edit_accounts"><span class="material-symbols-outlined">
+            edit
+          </span></a>
+    </div>
+
+    <div class="myaccounts">
+
+        <section class="datosdecuenta">
+            <p id="account_cuenta">Datos de cuenta</p>
+            <div class="myaccounts_datos">
+                <ul>
+                    <li id="ad">Email</li>
+                    <li>Contraseña</li>
+                </ul>
+                <ul id="autocomplete">
+                    <li id="ad">selenabenigni@gmail.com</li>
+                    <li>******</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="datospersonales">
+            <p id="account_datos">Datos personales</p>
+            <div class="myaccounts_autocomplete">
+                <ul>
+                    <li id="ad">Nombre</li>
+                    <li id="ad">Apellido</li>
+                    <li id="ad">Teléfono</li>
+                    <li>Dirección</li>
+                </ul>
+                <ul id="autocomplete">
+                    <li id="ad">Selena</li>
+                    <li id="ad">Benigni</li>
+                    <li id="ad">555 555 555</li>
+                    <li>Calle Falsa 123</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <input type="button" value="Mis Presupuestos" id="boton_accounts"></input>
+</main>
+
+    <!-- <tbody>
+        <% @my_accounts.each do |my_account| %>
+        <tr>
+            <td><%= my_account.first_name %></td>
+            <td><%= my_account.last_name %></td>
+            <td><%= my_account.email %></td>
+            <td><%= my_account.phone %></td>
+            <td><%= my_account.address %></td>
+            <td><%= link_to 'Show', my_account %></td>
+            <td><%= link_to 'Edit', edit_my_account_path(my_account) %></td>
+            <td><%= link_to 'Destroy', my_account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+    </tbody> -->
+
+
+<br>
+<%= link_to 'New My Account', new_my_account_path %>
