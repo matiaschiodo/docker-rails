@@ -23,7 +23,9 @@
     --Pink: #F0949F;
     --hover-Green: #21d3a3b0;
 }
-
+.inactive {
+  display: none;
+}
   * {
       font-family: 'Work Sans', sans-serif;
       box-sizing: border-box;
