@@ -19,6 +19,8 @@ es:
         password_confirmation: Confirmar contraseña
         remember_me: Recuerdame
   budgets:
+    edit:
+      editing_budget: Modificar presupuesto
     form:
       expiration_date: Fecha de expiracion
       name: Nombre
@@ -26,6 +28,7 @@ es:
     total: Total
   common:
     back: Atras
+    show: Ver
   devise:
     sessions:
       new:

@@ -19,6 +19,8 @@ en:
         password_confirmation: password confirmation
         remember_me: remember me
   budgets:
+    edit:
+      editing_budget: Editing budget
     form:
       expiration_date: Expiration date
       name: Name
@@ -26,6 +28,7 @@ en:
     total: Total
   common:
     back: Back
+    show: Show
   devise:
     sessions:
       new:

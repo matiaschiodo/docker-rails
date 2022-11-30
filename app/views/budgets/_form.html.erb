@@ -1,15 +1,18 @@
 <%= form_with(model: budget, local: true) do |form| %>
-  <% if budget.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(budget.errors.count, "error") %> prohibited this budget from being saved:</h2>
+<% if budget.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(budget.errors.count, "error") %> prohibited this budget from being saved:</h2>
 
-      <ul>
-      <% budget.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <ul>
+    <% budget.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="field signup_confirmation">
+  <div class="text_login">
 
   <div class="field signup_confirmation">
   <div class="text_login">
