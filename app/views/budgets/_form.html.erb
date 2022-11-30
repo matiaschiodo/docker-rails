@@ -11,22 +11,34 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field signup_confirmation">
+  <div class="text_login">
+
     <%= form.label :name, t('.name') %>
+  </div>
+  <div class="field_login signup_confirmation">
+
     <%= form.text_field :name %>
   </div>
+</div>
 
-  <div class="field">
+<div class="field signup_confirmation">
+  <div class="text_login1">
+
     <%= form.label :expiration_date, t('.expiration_date') %>
-    <%= form.date_field :expiration_date %>
   </div>
+  <%= form.date_field :expiration_date %>
+</div>
 
-  <div class="field">
+<div class="field signup_confirmation ">
+  <div class="text_login2">
+
     <%= form.label :total, t('budgets.total') %>
-    <%= form.number_field :total %>
   </div>
+  <%= form.number_field :total %>
+</div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<div class="actions">
+  <%= form.submit %>
+</div>
 <% end %>
