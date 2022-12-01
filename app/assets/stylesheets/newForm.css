@@ -1,0 +1,81 @@
+.text_login {
+  margin-bottom: 10px;
+  margin-right: 250px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* // width: 360px; */
+  height: 24px;
+}
+
+.signup_confirmation {
+  text-align: center;
+}
+
+.text_login1 {
+  margin-bottom: 10px;
+
+  color: var(--Gris-text-50);
+  margin-right: 150px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* // width: 360px; */
+  height: 24px
+}
+
+.text_login2 {
+  margin-bottom: 10px;
+
+  margin-right: 280px;
+
+  color: var(--Gris-text-50);
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  /* // width: 360px; */
+  height: 24px
+}
+
+form {
+  margin: 0 auto;
+}
+
+/* // nuevo budget */
+.nuevo-budget {
+  margin-right: 200px;
+  /* margin: 0 auto; */
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 29px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--Green);
+}
+
+.field input {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 319px;
+  height: 40px;
+  border-radius: 4.8px 4.8px 0px 0px;
+  background-color: var(--Content3);
+  border-color: var(--Content3);
+  border: 0px;
+  margin-bottom: 24px;
+  color: var(--Gris-text-50);
+
+}
+
+.actions input {
+  background-color: var(--Green);
+  font-size: 20px;
+  color: var(--black);
+
+
+}
