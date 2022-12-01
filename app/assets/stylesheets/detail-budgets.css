@@ -24,10 +24,7 @@
     line-height: 19px;
     list-style: none;
 }
-.material-symbols-outlined {
-    width: 20px;
-    height: 14px;
-}
+
 
 .detail-date {
     color: var(--Gris-text-400);
