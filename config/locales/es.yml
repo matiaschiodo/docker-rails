@@ -1,0 +1,47 @@
+---
+es:
+  Cancel_my_account: Cancelar Cuenta
+  Change_password: Cambiar contraseña
+  Edit: Editar cuenta
+  Forgot_password: Olvidaste tu contraseña?
+  Resend_confirmation_mail: Reenviar mail de confirmacion
+  Resend_unlock_mail: Reenviar mail de desbloqueo
+  Send_reset_password_mail: Enviar mail para cambio de contraseña
+  Sign_up: Registrarse
+  Unhappy: No estas conforme?
+  Update: Guardar cambios
+  activerecord:
+    attributes:
+      user:
+        current_password: Contraseña actual
+        email: Email
+        password: Contraseña
+        password_confirmation: Confirmar contraseña
+        remember_me: Recuerdame
+  budgets:
+    edit:
+      editing_budget: Modificar presupuesto
+    form:
+      expiration_date: Fecha de expiracion
+      name: Nombre
+    new_budget: Nuevo Presupuesto
+    total: Total
+  common:
+    back: Atras
+    show: Ver
+  devise:
+    sessions:
+      new:
+        log_in: Iniciar Sesion
+        log_in_title: Inicio de Sesion
+    shared:
+      links:
+        forgot_password: Olvidaste tu contraseña?
+        log_in: Iniciar Sesion
+        new_confirmation_mail: No recibi mail de confirmacion, enviar de nuevo?
+        new_unlock_mail: No recibi mail de desbloqueo, enviar de nuevo?
+        sign_up: Registrarse
+  errors:
+    messages:
+      not_saved: Sin Guardar
+  hello: Hello world

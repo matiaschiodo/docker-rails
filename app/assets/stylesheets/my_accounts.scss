@@ -1,0 +1,140 @@
+#my-accounts {
+    background-color: var(--Content1);
+    padding: 20px;
+}
+
+.myaccounts {
+    p {
+        color: var(--Gris-text-50);
+    }
+
+    ul {
+        background-color: var(--Content2);
+        border-radius: 4px 4px 0px 0px;
+        margin-bottom: 24px;
+    }
+    
+    .myaccounts_datos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        ul li {
+            color: var(--Gris-text-50);
+            list-style: none;
+        }
+    }
+    .myaccounts_autocomplete {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        ul li {
+            color: var(--Gris-text-50);
+            list-style: none;
+        }
+    }
+    #autocomplete li {
+        color: var(--Gris-text-300)
+    }
+}
+
+#backto_mybudgets {
+    width: 319px;
+    margin: auto;
+    a {
+        text-decoration: none;
+    }
+    #boton_accounts {
+        width: 319px;
+        height: 40px;
+        display: grid;
+        border-radius: 4.8px;
+        background-color: var(--Green);
+        font-size: 20px;
+        color: var(--Background); 
+    }
+}
+
+.myaccounts_title {
+    display: flex;
+    align-items: center;
+    margin: 38!important;
+    p {
+        color: var(--Gris-text-50);
+        margin-bottom: 0!important;
+        font-size: 24px;
+    }
+    span {
+        color: var(--Gris-text-50);
+        margin-top: 7px;
+    }
+}
+
+@media (min-width: 641px) {
+    #my-accounts {
+        width: 552px;
+        margin: auto;
+        margin-bottom: 77px;
+        margin-top: 76px;
+    }
+    #account_cuenta, #account_datos {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .myaccounts {
+        width: 360px;
+        margin: 0 76px;
+        .myaccounts_autocomplete, .myaccounts_datos {
+            ul {
+                margin-bottom: 46px;
+            }
+            li {
+                padding: 12px;
+            }
+        }
+    }
+    #backto_mybudgets {
+        width: 360px;
+        #boton_accounts {
+            width: 360px;
+            margin-bottom: 54px;
+        }
+    }
+    .myaccounts_title {
+        margin-left: 76px;
+        margin-top: 73px;
+        margin-bottom: 38px;
+        p {
+            margin-left: 26px;
+        }
+        #edit_accounts {
+            margin-left: 177px;
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+    .myaccounts_title {
+        justify-content: space-around;
+        margin-bottom: 32px;
+        margin-top: 28px;
+    }
+    #account_cuenta, #account_datos {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    .myaccounts {
+        li {
+            font-size: 16px;
+        }
+        ul {
+            padding: 12px;
+        }
+        #ad {
+            padding-bottom: 24px;
+        }
+    }
+
+}
+
