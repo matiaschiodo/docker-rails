@@ -55,7 +55,10 @@ li {
     background: #2A2E34;
     border: none;
 }
-
+.search-icon-budget {
+    width: 20px;
+    height: 36px;
+}
 .budgets_products-detail {
     display: flex;
     align-items: center;

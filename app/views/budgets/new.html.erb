@@ -3,11 +3,13 @@
 <%= render 'form', budget: @budget %>
 
 
-  
+<a href="/budgets">
   <span class="material-symbols-outlined detail-icon">
     arrow_back
-    <%= link_to t('common.back'), budgets_path %>
+    <%#= link_to t('common.back'), budgets_path %>
   </span>
+
+</a>  
 
 <section class="budgets-section">
   <section class="detail-1erSection">
