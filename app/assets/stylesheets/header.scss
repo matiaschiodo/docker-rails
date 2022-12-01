@@ -33,10 +33,10 @@
   
   .input-search-box span {
       color: var(--Gris-text-50);
-      margin-top: 4px;
+      margin-top: 6px;
   }
 
-  .my_account {
+  .linkto_myaccount {
       a {
         display: flex;
         align-items: center;
@@ -49,6 +49,7 @@
       }
       span {
         color: var(--Gris-text-50);
+        margin-bottom: 8px;
       }
       p {
         margin-bottom: 0!important;
@@ -62,10 +63,14 @@
   }
 
   #modal_header {
-    width: 212px;
-    height: 180px;
+    width: 228px;
+    height: 196px;
+    left: 0;
+    top: 55px!important;
+    right: 0;
+    bottom: 0;
+
     .modal-content {
-      margin-top: 57px;
       border-radius: 6px;
     }
     .modal-body {
@@ -78,8 +83,9 @@
     }
     .modal-body ul li {
       list-style: none;
-      font-size: 12.8px;
+      font-size: 16px;
     }
+
     a {
       color: var(--Gris-text-50);
       
@@ -96,7 +102,7 @@
     }
   }
 
-@media (min-width: 651px) {
+@media (min-width: 701px) {
   nav {
     display: flex;
     align-items: center;
@@ -125,15 +131,18 @@
           border: none;
       }
     }
-    .my_account {
+  .linkto_myaccount {
       padding-right: 156px;
       span {
-        padding: 0 18px;
-    }
+        margin-right: 16px;
+      }
+  }
+  .header_mobile_search {
+    display: none;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     nav.navbar {
         padding: 20px;
         justify-content: center;
@@ -147,16 +156,18 @@
     }
 
     div.input-search-box {
-        padding-right: 21px;
-
-        input {
           display: none;
-      }
     }
+
     .navbar-home {
         display: none;
     }
-    .my_account p {
+    .linkto_myaccount p {
         display: none;
+    }
+    .header_mobile_search {
+      padding-right: 21px;
+      margin-top: 8px;
+      cursor: pointer;
     }
 }
