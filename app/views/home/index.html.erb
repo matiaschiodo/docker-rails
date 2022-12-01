@@ -1,70 +1,133 @@
 <header>
-    <nav class="navbar">
+  <nav class="navbar">
 
-  <header>
-    <nav class="navbar">
+    <header>
+      <nav class="navbar">
 
         <div class="mobile_menu">
 
-            <span data-toggle="modal" data-target="#exampleModal" class="material-symbols-outlined">
-                menu
-                </span>
+          <span data-toggle="modal" data-target="#exampleModal" class="material-symbols-outlined">
+            menu
+          </span>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" id="modal_header">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <ul>
-                                    <li id="list_header"><a href="/">Suscripciones</a></li>
-                                    <li id="list_header"><a href="/">Tienda</a></li>
-                                    <li id="list_header"><a href="/">TV y Streaming</a></li>
-                                    <li id="list_header"><a href="/">Contacto</a></li>
-                                    <li id="list_header1"><a href="/budgets">Mis presupuestos</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" id="modal_header">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <ul>
+                    <li id="list_header"><a href="/">Suscripciones</a></li>
+                    <li id="list_header"><a href="/">Tienda</a></li>
+                    <li id="list_header"><a href="/">TV y Streaming</a></li>
+                    <li id="list_header"><a href="/">Contacto</a></li>
+                    <li id="list_header1"><a href="/budgets">Mis presupuestos</a></li>
+                  </ul>
                 </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
         </div>
         <div class="navbar-home">
-            <ul>
+          <ul>
             <li><a href="/">Suscripciones</a></li>
             <li><a href="/">Tienda</a></li>
             <li><a href="/">TV y Streaming</a></li>
             <li><a href="/budgets">Presupuestos</a></li>
             <li><a href="/">Contacto</a></li>
-            </ul>
+          </ul>
         </div>
 
         <div class="input-search">
-            <div class="input-search-box">
-                <input type="text" placeholder="Buscar...">
-                <a href=""><span class="material-symbols-outlined">
-                            search
-                    </span>
-                </a>
-            </div>
+          <div class="input-search-box">
+            <input type="text" placeholder="Buscar...">
+            <a href=""><span class="material-symbols-outlined">
+                search
+              </span>
+            </a>
+          </div>
         </div>
 
         <div class="header_mobile_search">
           <span class="material-symbols-outlined">
-                  search
+            search
           </span>
         </div>
-        
+
         <div class="linkto_myaccount">
-            <a href="/my_account">
-                <span class="material-symbols-outlined">
-                    account_circle
-                    </span>
-                <p>Mi cuenta</p>
-            </a>
+          <a href="/my_account">
+            <span class="material-symbols-outlined">
+              account_circle
+            </span>
+            <p>Mi cuenta</p>
+          </a>
         </div>
-    </nav>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="gris-text50 landing_first-section">
+        <div id="swiper1" class="swiper swiper1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="slider-img" src="/images/slider.png" alt="img-slider">
+            </div>
+            <div class="swiper-slide">
+              <img class="slider-img" src="/images/banner2.png" alt=img-slider">
+            </div>
+          </div>
+
+          <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
+          </div>
+          <div class="navbar-home">
+            <ul>
+              <li><a href="/">Suscripciones</a></li>
+              <li><a href="/">Tienda</a></li>
+              <li><a href="/">TV y Streaming</a></li>
+              <li><a href="/budgets">Presupuestos</a></li>
+              <li><a href="/">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="input-search">
+            <div class="input-search-box">
+              <input type="text" placeholder="Buscar...">
+              <a href=""><span class="material-symbols-outlined">
+                  search
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="my_account">
+            <a href="/my_account">
+              <span class="material-symbols-outlined">
+                account_circle
+              </span>
+              <p>Mi cuenta</p>
+            </a>
+          </div>
+  </nav>
 </header>
+
+<!-- Script header -->
+<script>
+  const menuHamIcon = document.getElementById('menu');
+  const mobileMenu = document.getElementById('menuMobile');
+
+  menuHamIcon.addEventListener('click', toggleMobileMenu);
+  // mobileMenu.addEventListener('click', closeMobileMenu)
+
+  function toggleMobileMenu() {
+    menuMobile.classList.toggle('inactive');
+
+  }
+</script>
 
 <main>
 
@@ -79,143 +142,127 @@
         <div class="swiper-slide">
           <img class="slider-img" src="/images/banner2.png" alt=img-slider">
         </div>
-      </div>
+        <!-- <div class="swiper-slide"></div> -->
 
-      <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
       </div>
-      <div class="navbar-home">
-        <ul>
-          <li><a href="/">Suscripciones</a></li>
-          <li><a href="/">Tienda</a></li>
-          <li><a href="/">TV y Streaming</a></li>
-          <li><a href="/budgets">Presupuestos</a></li>
-          <li><a href="/">Contacto</a></li>
-        </ul>
-      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-      <div class="input-search">
-        <div class="input-search-box">
-          <input type="text" placeholder="Buscar...">
-          <a href=""><span class="material-symbols-outlined">
-              search
-            </span>
-          </a>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <div id="swiper2" class="swiper swiper2">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img class="slider-img2" src="/images/banner1.png" alt="img-slider">
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img2" src="/images/banner-desktop-3.png" alt="img-slider">
+        </div>
+        <div class="swiper-slide">
+          <img class="slider-img2" src="/images/banner-desktop-4.png" alt="img-slider">
         </div>
       </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-      <div class="my_account">
-        <a href="/my_account">
-          <span class="material-symbols-outlined">
-            account_circle
-          </span>
-          <p>Mi cuenta</p>
-        </a>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+
+    <h2 class="landing_h2">Encontrá en Flow todo lo que te gusta</h2>
+    <p class="landing_p">TV en vivo, música, deportes, películas, series on-demand y mucho más </p>
+    <div class="landing_planes-flow">
+      <p class="flow" id="flow-full" href="#">
+        <span class="flow-full2">
+
+          Flow full
+        </span>
+      </p>
+      <p class="flow" id="flow-flex" href="#">Flow flex</p>
+      <p class="flow" id="flow-HD" href="#">Flow HD</p>
+
+    </div>
+  </section>
+  <section class="landing_card-section full-section ">
+    <img src="/images/landing-img.png" alt="img-card">
+    <div class="landing_card-container">
+      <div class="landing_little-container">
+
+        <p class="card-title">Internet 100 MB + </p>
+        <p class="card-title">Flow Full</p>
       </div>
-    </nav>
-  </header>
+      <p class="card-subtitle"> $4.790 <span class="final-por-mes">
+          final por mes
+        </span> </p>
+      <p class="Linea-movil">Cliente línea móvil
+        <span class="por-12-meses">
 
-  <!-- Script header -->
-  <script>
-    const menuHamIcon = document.getElementById('menu');
-    const mobileMenu = document.getElementById('menuMobile');
+          - $6.400 por 12 meses
+        </span>
+      </p>
+      <button class="landing_button" data-toggle="modal" data-target="#exampleModal1">¡Lo quiero!</button>
 
-    menuHamIcon.addEventListener('click', toggleMobileMenu);
-    // mobileMenu.addEventListener('click', closeMobileMenu)
-
-    function toggleMobileMenu() {
-      menuMobile.classList.toggle('inactive');
-
-    }
-  </script>
-
-  <main>
-
-    <section class="gris-text50 landing_first-section">
-      <div id="swiper1" class="swiper swiper1">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img class="slider-img" src="/images/slider.png" alt="img-slider">
+    </div>
+    <!-- Modal para agregar presupuesto -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-landing" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agregar a:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <div class="swiper-slide">
-            <img class="slider-img" src="/images/banner2.png" alt=img-slider">
+          <div class="modal-body modal-box-landing">
+            <div class="modal-1er-box">
+              Presupuesto 20420 <span class="material-symbols-outlined arrow-modal">
+                expand_more
+              </span>
+            </div>
+            + Crear nuevo
           </div>
-          <!-- <div class="swiper-slide"></div> -->
 
+          <div class="modal-footer modal-footer-landing">
+
+            <button type="button" class="btn btn-success myButton">Entendido</button>
+          </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
-      <div id="swiper2" class="swiper swiper2">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <img class="slider-img2" src="/images/banner1.png" alt="img-slider">
-          </div>
-          <div class="swiper-slide">
-            <img class="slider-img2" src="/images/banner-desktop-3.png" alt="img-slider">
-          </div>
-          <div class="swiper-slide">
-            <img class="slider-img2" src="/images/banner-desktop-4.png" alt="img-slider">
-          </div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <section class="landing_card-section flex-section inactive">
+    <img src="/images/landing2-img.png" alt="img-card">
+    <div class="landing_card-container">
+      <div class="landing_little-container">
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <p class="card-title">Internet 100 MB + </p>
+        <p class="card-title">Flow Flex Abono</p>
       </div>
+      <p class="card-subtitle"> $3.280 <span class="final-por-mes">
+          final por mes
+        </span> </p>
+      <p class="Linea-movil">Cliente línea móvil
+        <span class="por-12-meses">
 
-
-      <h2 class="landing_h2">Encontrá en Flow todo lo que te gusta</h2>
-      <p class="landing_p">TV en vivo, música, deportes, películas, series on-demand y mucho más </p>
-      <div class="landing_planes-flow">
-        <p class="flow" id="flow-full" href="#">
-          <span class="flow-full2">
-
-            Flow full
-          </span>
-        </p>
-        <p class="flow" id="flow-flex" href="#">Flow flex</p>
-        <p class="flow" id="flow-HD" href="#">Flow HD</p>
-
-      </div>
-    </section>
-    <section class="landing_card-section full-section ">
-      <img src="/images/landing-img.png" alt="img-card">
-      <div class="landing_card-container">
-        <div class="landing_little-container">
-
-          <p class="card-title">Internet 100 MB + </p>
-          <p class="card-title">Flow Full</p>
-        </div>
-        <p class="card-subtitle"> $4.790 <span class="final-por-mes">
-            final por mes
-          </span> </p>
-        <p class="Linea-movil">Cliente línea móvil
-          <span class="por-12-meses">
-
-            - $6.400 por 12 meses
-          </span>
-        </p>
-        <button class="landing_button" data-toggle="modal" data-target="#exampleModal1">¡Lo quiero!</button>
-
-      </div>
+          - $5.200 por 12 meses
+        </span>
+      </p>
+      <button class="landing_button" data-toggle="modal" data-target="#exampleModal3">¡Lo quiero!</button>
       <!-- Modal para agregar presupuesto -->
-      <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-landing" role="document">
           <div class="modal-content">
@@ -241,284 +288,238 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="landing_card-section flex-section inactive">
-      <img src="/images/landing2-img.png" alt="img-card">
-      <div class="landing_card-container">
-        <div class="landing_little-container">
+    </div>
+  </section>
+  <section class="landing_card-section HD-section inactive">
+    <img src="/images/landing3-img.png" alt="img-card">
+    <div class="landing_card-container">
+      <div class="landing_little-container">
 
-          <p class="card-title">Internet 100 MB + </p>
-          <p class="card-title">Flow Flex Abono</p>
-        </div>
-        <p class="card-subtitle"> $3.280 <span class="final-por-mes">
-            final por mes
-          </span> </p>
-        <p class="Linea-movil">Cliente línea móvil
-          <span class="por-12-meses">
+        <p class="card-title">Internet 50 MB + </p>
+        <p class="card-title">Flow Clasico HD</p>
+      </div>
+      <p class="card-subtitle"> $2.460 <span class="final-por-mes">
+          final por mes
+        </span> </p>
+      <p class="Linea-movil">Cliente línea móvil
+        <span class="por-12-meses">
 
-            - $5.200 por 12 meses
-          </span>
-        </p>
-        <button class="landing_button" data-toggle="modal" data-target="#exampleModal3">¡Lo quiero!</button>
-        <!-- Modal para agregar presupuesto -->
-        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-          aria-hidden="true">
-          <div class="modal-dialog modal-landing" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Agregar a:</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body modal-box-landing">
-                <div class="modal-1er-box">
-                  Presupuesto 20420 <span class="material-symbols-outlined arrow-modal">
-                    expand_more
-                  </span>
-                </div>
-                + Crear nuevo
-              </div>
+          - $3.800 por 12 meses
+        </span>
+      </p>
+      <button class="landing_button" data-toggle="modal" data-target="#exampleModal2">¡Lo quiero!</button>
 
-              <div class="modal-footer modal-footer-landing">
-
-                <button type="button" class="btn btn-success myButton">Entendido</button>
-              </div>
+    </div>
+    <!-- Modal para agregar presupuesto -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-landing" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agregar a:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modal-box-landing">
+            <div class="modal-1er-box">
+              Presupuesto 20420 <span class="material-symbols-outlined arrow-modal">
+                expand_more
+              </span>
             </div>
+            + Crear nuevo
+          </div>
+
+          <div class="modal-footer modal-footer-landing">
+
+            <button type="button" class="btn btn-success myButton">Entendido</button>
           </div>
         </div>
       </div>
-    </section>
-    <section class="landing_card-section HD-section inactive">
-      <img src="/images/landing3-img.png" alt="img-card">
-      <div class="landing_card-container">
-        <div class="landing_little-container">
+    </div>
+  </section>
 
-          <p class="card-title">Internet 50 MB + </p>
-          <p class="card-title">Flow Clasico HD</p>
-        </div>
-        <p class="card-subtitle"> $2.460 <span class="final-por-mes">
-            final por mes
-          </span> </p>
-        <p class="Linea-movil">Cliente línea móvil
-          <span class="por-12-meses">
+  <section class="landing_third-section">
+    <h2 class="gris-text50  landing_third-section">La máxima experiencia en entretenimiento</h2>
+    <p>Conocé la <a href="#">
+        guía de canales
+      </a> </p>
 
-            - $3.800 por 12 meses
-          </span>
-        </p>
-        <button class="landing_button" data-toggle="modal" data-target="#exampleModal2">¡Lo quiero!</button>
+  </section>
+  <section class="footer-sticky">
+    <a class="venta-telefonica" href="#">Venta teléfonica</a> | <a class="mis-presupuestos" href="#">Mis
+      Prespuestos</a>
+  </section>
+  <section class="footer-sticky-desktop">
+    <a class="venta-telefonica" href="#">Venta teléfonica 0800 222 3333</a> | <a class="mis-presupuestos" href="#">Mis
+      Prespuestos</a>
+  </section>
+</main>
+<!-- Script Slider -->
+<script>
+  window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      // direction: 'vertical',
+      loop: true,
 
-      </div>
-      <!-- Modal para agregar presupuesto -->
-      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-landing" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Agregar a:</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body modal-box-landing">
-              <div class="modal-1er-box">
-                Presupuesto 20420 <span class="material-symbols-outlined arrow-modal">
-                  expand_more
-                </span>
-              </div>
-              + Crear nuevo
-            </div>
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
-            <div class="modal-footer modal-footer-landing">
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-              <button type="button" class="btn btn-success myButton">Entendido</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="landing_third-section">
-      <h2 class="gris-text50  landing_third-section">La máxima experiencia en entretenimiento</h2>
-      <p>Conocé la <a href="#">
-          guía de canales
-        </a> </p>
-
-    </section>
-    <section class="footer-sticky">
-      <a class="venta-telefonica" href="#">Venta teléfonica</a> | <a class="mis-presupuestos" href="#">Mis
-        Prespuestos</a>
-    </section>
-    <section class="footer-sticky-desktop">
-      <a class="venta-telefonica" href="#">Venta teléfonica 0800 222 3333</a> | <a class="mis-presupuestos" href="#">Mis
-        Prespuestos</a>
-    </section>
-  </main>
-  <!-- Script Slider -->
-  <script>
-    window.addEventListener('load', (event) => {
-      console.log('page is fully loaded');
-      const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        // direction: 'vertical',
-        loop: true,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      });
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
     });
-  </script>
-  <!-- Script Cards -->
-  <script>
-    const flowFull = document.getElementById('flow-full');
-    const flowFlex = document.getElementById('flow-flex');
-    const flowHD = document.getElementById('flow-HD');
-    const flexSection = document.querySelector('.flex-section')
-    const HdSection = document.querySelector('.HD-section')
-    const fullSection = document.querySelector('.full-section')
+  });
+</script>
+<!-- Script Cards -->
+<script>
+  const flowFull = document.getElementById('flow-full');
+  const flowFlex = document.getElementById('flow-flex');
+  const flowHD = document.getElementById('flow-HD');
+  const flexSection = document.querySelector('.flex-section')
+  const HdSection = document.querySelector('.HD-section')
+  const fullSection = document.querySelector('.full-section')
 
-    const actionFlow = () => {
+  const actionFlow = () => {
 
-      flexSection.style.display = 'none'
-      HdSection.style.display = 'none'
-      fullSection.style.display = 'flex'
+    flexSection.style.display = 'none'
+    HdSection.style.display = 'none'
+    fullSection.style.display = 'flex'
 
-      flowFull.style.color = '#21D3A3'
-      flowFlex.style.color = '#F3F3F3'
-      flowHD.style.color = '#F3F3F3'
+    flowFull.style.color = '#21D3A3'
+    flowFlex.style.color = '#F3F3F3'
+    flowHD.style.color = '#F3F3F3'
 
-    }
-    flowFull.addEventListener('click', actionFlow)
+  }
+  flowFull.addEventListener('click', actionFlow)
 
-    const actionFlex = () => {
-      console.log('se activo flex')
-      flexSection.style.display = 'flex'
-      HdSection.style.display = 'none'
-      fullSection.style.display = 'none'
+  const actionFlex = () => {
+    console.log('se activo flex')
+    flexSection.style.display = 'flex'
+    HdSection.style.display = 'none'
+    fullSection.style.display = 'none'
 
-      flowFlex.style.color = '#21D3A3'
-      flowFull.style.color = '#F3F3F3'
-      flowHD.style.color = '#F3F3F3'
+    flowFlex.style.color = '#21D3A3'
+    flowFull.style.color = '#F3F3F3'
+    flowHD.style.color = '#F3F3F3'
 
-    }
-    flowFlex.addEventListener('click', actionFlex)
+  }
+  flowFlex.addEventListener('click', actionFlex)
 
-    const actionHD = () => {
-      console.log('se activo HD')
+  const actionHD = () => {
+    console.log('se activo HD')
 
-      flexSection.style.display = 'none'
-      HdSection.style.display = 'flex'
-      fullSection.style.display = 'none'
-      flowHD.style.color = '#21D3A3'
-      flowFlex.style.color = '#F3F3F3'
+    flexSection.style.display = 'none'
+    HdSection.style.display = 'flex'
+    fullSection.style.display = 'none'
+    flowHD.style.color = '#21D3A3'
+    flowFlex.style.color = '#F3F3F3'
 
-    }
-    flowHD.addEventListener('click', actionHD)
-  </script>
-  <footer class="footer-mobile">
+  }
+  flowHD.addEventListener('click', actionHD)
+</script>
+<footer class="footer-mobile">
 
 
-    <h1><img class="Telecom-img" src="./images/icon-telecom2.png" alt=""></h1>
-    <ul>
-      <li>Acerca de</li>
-      <li>Asistencia</li>
-      <li>Correo de ayuda</li>
-      <li>Contacto</li>
-      <li>Arrenpentimiento</li>
+  <h1><img class="Telecom-img" src="./images/icon-telecom2.png" alt=""></h1>
+  <ul>
+    <li>Acerca de</li>
+    <li>Asistencia</li>
+    <li>Correo de ayuda</li>
+    <li>Contacto</li>
+    <li>Arrenpentimiento</li>
+  </ul>
+  <ul>
+    <li>
+
+      General Hornos 690-Ciudad de Bs.As
+    </li>
+  </ul>
+  <section>
+    <ul class="icons-list">
+      <li><img class="img facebook img2" src="./images/facebook-icon2.png" alt=""></li>
+      <li><img class="img" src="./images/twitter.png" alt=""></li>
+      <li><img class="img" src="./images/linkedin.png" alt=""></li>
     </ul>
+  </section>
+  <section class="footer_final-section">
     <ul>
+      <li>Telecom Argentina S.A</li>
+      <li>Todos los derechos reservados</li>
+    </ul>
+    <ul class="footer_afip-section">
+      <li><img class="img3" src="./images/aaip-icon.png" alt=""></li>
+      <li><img class=" img3" src="./images/dataFiscal-icon.png" alt=""></li>
+    </ul>
+  </section>
+
+</footer>
+
+<footer class="footer-desktop">
+  <section class="footer_telecom-section">
+    <img src="./images/icon-telecom2.png" alt="">
+  </section>
+  <section class="footer_first-section">
+
+    <ul class="first-section_list1">
+      <a class="Acerca_de" href="#">Acerca de</a>
+      <li>Compañia</li>
+      <li>Inversiones</li>
+      <li>Prensa</li>
+      <li>RRHH</li>
+      <li>RSE</li>
+    </ul>
+    <ul class="first-section_list">
+      <a href="#">ASISTENCIA</a>
+      <li>Conexiones clandestinas</li>
+      <li>Enacom contacto@enacom.gob.ar</li>
+      <li>Accesibilidad</li>
+      <li>Prestacion Basica Universal</li>
+    </ul>
+    <ul class="first-section_list">
+      <a href="#">ASISTENCIA</a>
+      <li>Defensa de las y los consumidores.Para relcamos ingrese aqui</li>
+      <li>Politica de privacidad de Telecom Argentinca S.A.</li>
+      <li>Contratos de adhesion-Ley N˚24.240 de Defensa del Consumidor</li>
+      <li>Reglamento de cliente servicios TIC</li>
+    </ul>
+    <ul class="first-section_list">
+      <a href="#">Ayuda</a>
       <li>
-
-        General Hornos 690-Ciudad de Bs.As
+        Contacto
       </li>
-    </ul>
-    <section>
+      <li>
+        Arrenpentimiento
+      </li>
       <ul class="icons-list">
         <li><img class="img facebook img2" src="./images/facebook-icon2.png" alt=""></li>
-        <li><img class="img" src="./images/twitter.png" alt=""></li>
-        <li><img class="img" src="./images/linkedin.png" alt=""></li>
+        <li><img class="img img2" src="./images/twitter.png" alt=""></li>
+        <li><img class="img img2" src="./images/linkedin.png" alt=""></li>
       </ul>
-    </section>
-    <section class="footer_final-section">
-      <ul>
-        <li>Telecom Argentina S.A</li>
-        <li>Todos los derechos reservados</li>
-      </ul>
-      <ul class="footer_afip-section">
-        <li><img class="img3" src="./images/aaip-icon.png" alt=""></li>
-        <li><img class=" img3" src="./images/dataFiscal-icon.png" alt=""></li>
-      </ul>
-    </section>
-
-  </footer>
-
-  <footer class="footer-desktop">
-    <section class="footer_telecom-section">
-      <img src="./images/icon-telecom2.png" alt="">
-    </section>
-    <section class="footer_first-section">
-
-      <ul class="first-section_list1">
-        <a class="Acerca_de" href="#">Acerca de</a>
-        <li>Compañia</li>
-        <li>Inversiones</li>
-        <li>Prensa</li>
-        <li>RRHH</li>
-        <li>RSE</li>
-      </ul>
-      <ul class="first-section_list">
-        <a href="#">ASISTENCIA</a>
-        <li>Conexiones clandestinas</li>
-        <li>Enacom contacto@enacom.gob.ar</li>
-        <li>Accesibilidad</li>
-        <li>Prestacion Basica Universal</li>
-      </ul>
-      <ul class="first-section_list">
-        <a href="#">ASISTENCIA</a>
-        <li>Defensa de las y los consumidores.Para relcamos ingrese aqui</li>
-        <li>Politica de privacidad de Telecom Argentinca S.A.</li>
-        <li>Contratos de adhesion-Ley N˚24.240 de Defensa del Consumidor</li>
-        <li>Reglamento de cliente servicios TIC</li>
-      </ul>
-      <ul class="first-section_list">
-        <a href="#">Ayuda</a>
-        <li>
-          Contacto
-        </li>
-        <li>
-          Arrenpentimiento
-        </li>
-        <ul class="icons-list">
-          <li><img class="img facebook img2" src="./images/facebook-icon2.png" alt=""></li>
-          <li><img class="img img2" src="./images/twitter.png" alt=""></li>
-          <li><img class="img img2" src="./images/linkedin.png" alt=""></li>
-        </ul>
-      </ul>
-    </section>
-    <section class="footer_second-section">
-      <ul class="second-section_list">
-        <li>Los servicios que presta Telecom Argentina S.A. están sujetos a disponibilidad técnica y geográfica dentro
-          del territorio de la República Argentina
-        </li>
-        <li>© 1997 / 2022 Telecom Argentina S.A. Todos los derechos reservados - General Hornos 690 - Ciudad de Bs. As.
-          CUIT 30-63945373-</li>
-      </ul>
-      <ul class="footer_afip-section">
-        <li><img class="afip-icon-desktop" src="./images/aaip-icon.png" alt=""></li>
-        <li><img class=" afip-icon-desktop" src="./images/dataFiscal-icon.png" alt=""></li>
-      </ul>
-    </section>
-  </footer>
+    </ul>
+  </section>
+  <section class="footer_second-section">
+    <ul class="second-section_list">
+      <li>Los servicios que presta Telecom Argentina S.A. están sujetos a disponibilidad técnica y geográfica dentro
+        del territorio de la República Argentina
+      </li>
+      <li>© 1997 / 2022 Telecom Argentina S.A. Todos los derechos reservados - General Hornos 690 - Ciudad de Bs. As.
+        CUIT 30-63945373-</li>
+    </ul>
+    <ul class="footer_afip-section">
+      <li><img class="afip-icon-desktop" src="./images/aaip-icon.png" alt=""></li>
+      <li><img class=" afip-icon-desktop" src="./images/dataFiscal-icon.png" alt=""></li>
+    </ul>
+  </section>
+</footer>
