@@ -1,15 +1,29 @@
+.form-box {
+
+
+  min-width: 370px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  margin-left: 30px;
+}
+
 .text_login {
   margin-bottom: 10px;
   margin-right: 250px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  /* // width: 360px; */
   height: 24px;
 }
 
 .signup_confirmation {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .text_login1 {
@@ -20,8 +34,15 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  /* // width: 360px; */
+  width: 360px;
   height: 24px
+}
+
+.text_login1 label {
+  width: 360px;
+  height: 24px;
+  justify-content: flex-start;
+  align-self: flex-end;
 }
 
 .text_login2 {
@@ -34,24 +55,19 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  /* // width: 360px; */
   height: 24px
 }
 
-form {
-  margin: 0 auto;
-}
+
 
 /* // nuevo budget */
 .nuevo-budget {
-  margin-right: 200px;
-  /* margin: 0 auto; */
+
   margin-top: 15px;
   font-weight: 500;
   font-size: 34px;
   line-height: 29px;
   margin-bottom: 30px;
-  text-align: center;
   color: var(--Green);
 }
 
@@ -62,6 +78,7 @@ form {
   align-items: center;
   margin: auto;
   width: 319px;
+  width: 90vw;
   height: 40px;
   border-radius: 4.8px 4.8px 0px 0px;
   background-color: var(--Content3);
@@ -78,4 +95,56 @@ form {
   color: var(--black);
 
 
+}
+
+@media (min-width: 768px) {
+  form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .signup_confirmation {
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+  .field input {
+    width: 700px;
+    text-align: center;
+  }
+
+  .form-box {
+    text-align: center;
+  }
+
+  .text_login label {
+    width: 100%;
+    height: 24px;
+    justify-content: flex-start;
+    align-self: flex-start;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .text_login1 label {
+    width: 200%;
+    height: 24px;
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-right: 0px;
+    text-align: center;
+
+
+
+  }
+
+  .text_login,
+  .text_login1,
+  .text_login2 {
+    margin-right: 0px;
+  }
 }

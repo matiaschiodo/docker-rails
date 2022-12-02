@@ -154,7 +154,8 @@ main {
 .landing_planes-flow p {
     text-decoration: none;
     color: var(--Gris-text-50);
-    width: 71px;
+    margin-top: 10px;
+    /* width: 71px; */
     height: 24px;
 
     /* Body/Body */
@@ -165,19 +166,9 @@ main {
     line-height: 24px;
 }
 
-.flow-full2 {
-    /* color: var(--Green); */
 
-}
 .flow-full2:hover {
     color: #21D3A3;
-}
-.landing_card-section {
-    /* responsive-desktop*/
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around; */
-
 }
 
 .landing_card-section img {
@@ -319,14 +310,7 @@ height: 58px; */
     margin-top: 20px;
 }
 
-.landing_third-section h2 {
-    /* responsive-desktop */
-    /* width: 672px;
-    height: 39px;
-    font-size: 32px;
-    line-height: 38px; */
 
-}
 
 .landing_third-section p {
     width: 320px;
@@ -418,29 +402,35 @@ height: 58px; */
 .mis-presupuestos {
     color: var(--blue);
 }
+
 /* Modal */
-.modal-landing{
+.modal-landing {
     width: 300px;
-height: 201px;
+    height: 201px;
 
 }
-.modal-box-landing{
+
+.modal-box-landing {
     color: var(--Green);
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-.modal-header{
+
+.modal-header {
     border-bottom: 0px;
 }
-.modal-footer{
-    border:  none 0px;
+
+.modal-footer {
+    border: none 0px;
 }
-.modal-footer-landing{
+
+.modal-footer-landing {
     display: flex;
-justify-content: flex-end;
+    justify-content: flex-end;
 }
-.modal-1er-box{
+
+.modal-1er-box {
     color: var(--Green);
     display: flex;
     align-items: center;
@@ -448,9 +438,11 @@ justify-content: flex-end;
     justify-content: space-between;
     padding: 3px 10px;
 }
-.arrow-modal{
+
+.arrow-modal {
     margin-bottom: 8px;
 }
+
 @media (max-width: 700px) {
     .landing_little-container {
         display: flex;
