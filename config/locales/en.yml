@@ -18,6 +18,10 @@ en:
         password: Password
         password_confirmation: password confirmation
         remember_me: remember me
+    models:
+      budget:
+        one: Budget
+        others: Budgets
   budgets:
     edit:
       editing_budget: Editing budget

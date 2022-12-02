@@ -18,6 +18,10 @@ es:
         password: Contraseña
         password_confirmation: Confirmar contraseña
         remember_me: Recuerdame
+    models:
+      budget:
+        one: Presupuesto
+        others: Presupuestos
   budgets:
     edit:
       editing_budget: Modificar presupuesto
