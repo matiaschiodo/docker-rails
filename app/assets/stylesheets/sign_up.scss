@@ -106,6 +106,9 @@
     font-size: 20px;
     display: grid;
     align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     a {
         color: var(--Gris-text-50);

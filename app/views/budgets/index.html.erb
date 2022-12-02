@@ -1,4 +1,68 @@
 <!-- <p id="notice"><%#= notice %></p> -->
+ <!-- <header>
+  <nav class="navbar">
+
+    <div class="mobile_menu">
+
+      <span data-toggle="modal" data-target="#exampleModal" class="material-symbols-outlined">
+        menu
+      </span>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" id="modal_header">
+          <div class="modal-content">
+            <div class="modal-body">
+              <ul>
+                <li id="list_header"><a href="/">Suscripciones</a></li>
+                <li id="list_header"><a href="/">Tienda</a></li>
+                <li id="list_header"><a href="/">TV y Streaming</a></li>
+                <li id="list_header"><a href="/">Contacto</a></li>
+                <li id="list_header1"><a href="/budgets">Mis presupuestos</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar-logo"><a href="#"><img src="/images/Flow_logo.png"></a>
+    </div>
+    <div class="navbar-home">
+      <ul>
+        <li><a href="/">Suscripciones</a></li>
+        <li><a href="/">Tienda</a></li>
+        <li><a href="/">TV y Streaming</a></li>
+        <li><a href="/budgets">Presupuestos</a></li>
+        <li><a href="/">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="input-search">
+      <div class="input-search-box">
+        <input type="text" placeholder="Buscar...">
+        <a href=""><span class="material-symbols-outlined">
+            search
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header_mobile_search">
+      <span class="material-symbols-outlined">
+        search
+      </span>
+    </div>
+
+    <div class="linkto_myaccount">
+      <a href="/my_account">
+        <span class="material-symbols-outlined">
+          account_circle
+        </span>
+        <p>Mi cuenta</p>
+      </a>
+    </div>
+  </nav>
+</header>  -->
 
 <body class="budget-body">
   <section class="budgets-section">
@@ -134,35 +198,103 @@
 
 
 
-
+    <a class="new-budget-anchor" href="/budgets/new">Nuevo presupuesto</a>
+    <%#= link_to 'Nuevo Presupuesto', new_budget_path %>
+     <!-- <footer class="footer-mobile">
+    
+    
+      <h1><img class="Telecom-img" src="./images/icon-telecom2.png" alt=""></h1>
+      <ul>
+        <li>Acerca de</li>
+        <li>Asistencia</li>
+        <li>Correo de ayuda</li>
+        <li>Contacto</li>
+        <li>Arrenpentimiento</li>
+      </ul>
+      <ul>
+        <li>
+    
+          General Hornos 690-Ciudad de Bs.As
+        </li>
+      </ul>
+      <section>
+        <ul class="icons-list">
+          <li><img class="img facebook img2" src="./images/facebook-icon2.png" alt=""></li>
+          <li><img class="img" src="./images/twitter.png" alt=""></li>
+          <li><img class="img" src="./images/linkedin.png" alt=""></li>
+        </ul>
+      </section>
+      <section class="footer_final-section">
+        <ul>
+          <li>Telecom Argentina S.A</li>
+          <li>Todos los derechos reservados</li>
+        </ul>
+        <ul class="footer_afip-section">
+          <li><img class="img3" src="./images/aaip-icon.png" alt=""></li>
+          <li><img class=" img3" src="./images/dataFiscal-icon.png" alt=""></li>
+        </ul>
+      </section>
+    
+    </footer>
+     -->
+    <!-- <footer class="footer-desktop">
+      <section class="footer_telecom-section">
+        <img src="./images/icon-telecom2.png" alt="">
+      </section>
+      <section class="footer_first-section">
+    
+        <ul class="first-section_list1">
+          <a class="Acerca_de" href="#">Acerca de</a>
+          <li>Compañia</li>
+          <li>Inversiones</li>
+          <li>Prensa</li>
+          <li>RRHH</li>
+          <li>RSE</li>
+        </ul>
+        <ul class="first-section_list">
+          <a href="#">ASISTENCIA</a>
+          <li>Conexiones clandestinas</li>
+          <li>Enacom contacto@enacom.gob.ar</li>
+          <li>Accesibilidad</li>
+          <li>Prestacion Basica Universal</li>
+        </ul>
+        <ul class="first-section_list">
+          <a href="#">ASISTENCIA</a>
+          <li>Defensa de las y los consumidores.Para relcamos ingrese aqui</li>
+          <li>Politica de privacidad de Telecom Argentinca S.A.</li>
+          <li>Contratos de adhesion-Ley N˚24.240 de Defensa del Consumidor</li>
+          <li>Reglamento de cliente servicios TIC</li>
+        </ul>
+        <ul class="first-section_list">
+          <a href="#">Ayuda</a>
+          <li>
+            Contacto
+          </li>
+          <li>
+            Arrenpentimiento
+          </li>
+          <ul class="icons-list">
+            <li><img class="img facebook img2" src="./images/facebook-icon2.png" alt=""></li>
+            <li><img class="img img2" src="./images/twitter.png" alt=""></li>
+            <li><img class="img img2" src="./images/linkedin.png" alt=""></li>
+          </ul>
+        </ul>
+      </section>
+      <section class="footer_second-section">
+        <ul class="second-section_list">
+          <li>Los servicios que presta Telecom Argentina S.A. están sujetos a disponibilidad técnica y geográfica dentro
+            del territorio de la República Argentina
+          </li>
+          <li>© 1997 / 2022 Telecom Argentina S.A. Todos los derechos reservados - General Hornos 690 - Ciudad de Bs. As.
+            CUIT 30-63945373-</li>
+        </ul>
+        <ul class="footer_afip-section">
+          <li><img class="afip-icon-desktop" src="./images/aaip-icon.png" alt=""></li>
+          <li><img class=" afip-icon-desktop" src="./images/dataFiscal-icon.png" alt=""></li>
+        </ul>
+      </section>
+    </footer>  -->
 
 </body>
-<!-- <h1>Presupuestos</h1>
+<% end %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Expiration date</th>
-      <th>Total</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead> -->
-
-<tbody>
-  <%# @budgets.each do |budget| %>
-  <tr>
-    <td><%#= budget.name %></td>
-    <td><%#= budget.expiration_date %></td>
-    <td><%#= budget.total %></td>
-    <td><%#= link_to 'Show', budget %></td>
-    <td><%#= link_to 'Edit', edit_budget_path(budget) %></td>
-    <td><%#= link_to 'Destroy', budget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-  <% end %>
-</tbody>
-</table>
-
-<br>
-<a class="new-budget-anchor" href="/budgets/new">Nuevo presupuesto</a>
-<!-- <%#= link_to 'Nuevo Presupuesto', new_budget_path %> -->
