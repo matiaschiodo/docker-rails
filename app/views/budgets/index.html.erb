@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%#= notice %></p> -->
 
 <body class="budget-body">
   <section class="budgets-section">
@@ -39,15 +39,27 @@
               </div>
               <div class="modal-body">
                 <form>
+                  <div class="check-box">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> más nuevo</label> <br>
 
-                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                  <label for="vehicle1"> Más antiguo a más nuevo</label><br>
-                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                  <label for="vehicle2"> Más nuevo a más antiguo</label><br>
-                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                  <label for="vehicle3"> Precio más bajo</label> <br>
-                  <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
-                  <label for="vehicle4"> Precio más alto</label>
+                  </div>
+                  <div class="check-box">
+
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> más viejo</label><br>
+                  </div>
+                  <div class="check-box">
+
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Precio más bajo</label> <br>
+                  </div>
+                  <div class="check-box">
+
+                    <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                    <label for="vehicle4"> Precio más alto</label>
+
+                  </div>
                 </form>
 
 
@@ -63,25 +75,27 @@
         </div>
       </div>
     </div>
+    <% @budgets.each do |budget| %>
     <div class="budgets_products">
 
       <ul>
         <%#= budget.name %>
         <%#= link_to 'Show', budget %>
 
-        <p>Presupuesto #20420</p>
+        <!-- <p>Presupuesto #20420</p> -->
+        <p><%= budget.name %></p>
         <ul class="budgets_products-detail">
-          <%#= budget.expiration_date %>
-          <li class="detail-li">01/11/2022</li>
+          <%= budget.expiration_date %>
+          <li class="detail-li"><%= budget.expiration_date %></li>
           <%#= budget.total %>
 
-          <li class="detail-li">- 2 productos</li>
+          <li class="detail-li"> <%= budget.total %></li>
 
         </ul>
       </ul>
       <ul class="budgets_products-detail">
         <%#= budget.total %>
-        <li class="detail-li-price">$2.490</li>
+        <li class="detail-li-price"><%= budget.total %></li>
         <li class="detail-li-price">
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
@@ -98,7 +112,8 @@
                   El producto seleccionado se eliminará de tu presupuesto, puedes volver a agregarlo luego </div>
                 <div class="modal-footer">
                   <button type="button" class="btn  btn-success myButton2" data-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-success myButton">Si, eliminar</button>
+                  <button type="button" class="btn btn-success myButton">
+                    <%= link_to 'Si,eliminar', budget, method: :delete, data: { confirm: 'Are you sure?' } %></button>
                 </div>
               </div>
             </div>
@@ -118,96 +133,11 @@
 
 
 
-    <!-- <div class="budgets_products">
-
-      <ul>
-        <p>Presupuesto #20420</p>
-        <ul class="budgets_products-detail">
-          <li class="detail-li">01/11/2022</li>
-          <li class="detail-li">- 2 productos</li>
-
-        </ul>
-      </ul>
-      <ul class="budgets_products-detail">
-        <li class="detail-li-price">$2.490</li>
-        <li class="detail-li-price">
-          <span class="material-symbols-outlined budgets_delete-icon">
-            delete
-          </span></li>
-      </ul>
-    </div>
-    <hr>
-
-
-
-
-    <div class="budgets_products">
-
-      <ul>
-        <p>Presupuesto #20420</p>
-        <ul class="budgets_products-detail">
-          <li class="detail-li">01/11/2022</li>
-          <li class="detail-li">- 2 productos</li>
-
-        </ul>
-      </ul>
-      <ul class="budgets_products-detail">
-        <li class="detail-li-price">$2.490</li>
-        <li class="detail-li-price">
-          <span class="material-symbols-outlined budgets_delete-icon">
-            delete
-          </span></li>
-      </ul>
-    </div>
-    <hr>
-
-    <div class="budgets_products">
-
-      <ul>
-        <p>Presupuesto #20420</p>
-        <ul class="budgets_products-detail">
-          <li class="detail-li">01/11/2022</li>
-          <li class="detail-li">- 2 productos</li>
-
-        </ul>
-      </ul>
-      <ul class="budgets_products-detail">
-        <li class="detail-li-price">$2.490</li>
-        <li class="detail-li-price">
-          <span class="material-symbols-outlined budgets_delete-icon">
-            delete
-          </span></li>
-      </ul>
-    </div>
-    <hr class="hr">
-
-    <div class="budgets_products">
-
-      <ul>
-        <p>Presupuesto #20420</p>
-        <ul class="budgets_products-detail">
-          <li class="detail-li">01/11/2022</li>
-          <li class="detail-li">- 2 productos</li>
-
-        </ul>
-      </ul>
-      <ul class="budgets_products-detail">
-        <li class="detail-li-price">$2.490</li>
-        <li class="detail-li-price">
-
-          <span class="material-symbols-outlined budgets_delete-icon">
-            delete
-          </span></li>
-
-      </ul>
-    </div>
-    <hr class="hr">
-  </section> -->
 
 
 
 </body>
-<h1>Presupuestos</h1>
+<!-- <h1>Presupuestos</h1>
 
 <table>
   <thead>
@@ -217,22 +147,22 @@
       <th>Total</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+  </thead> -->
 
 <tbody>
-  <% @budgets.each do |budget| %>
+  <%# @budgets.each do |budget| %>
   <tr>
-    <td><%= budget.name %></td>
-    <td><%= budget.expiration_date %></td>
-    <td><%= budget.total %></td>
-    <td><%= link_to 'Show', budget %></td>
-    <td><%= link_to 'Edit', edit_budget_path(budget) %></td>
-    <td><%= link_to 'Destroy', budget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%#= budget.name %></td>
+    <td><%#= budget.expiration_date %></td>
+    <td><%#= budget.total %></td>
+    <td><%#= link_to 'Show', budget %></td>
+    <td><%#= link_to 'Edit', edit_budget_path(budget) %></td>
+    <td><%#= link_to 'Destroy', budget, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
   <% end %>
 </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Budget', new_budget_path %>
+<a class="new-budget-anchor" href="/budgets/new">Nuevo presupuesto</a>
+<!-- <%#= link_to 'Nuevo Presupuesto', new_budget_path %> -->

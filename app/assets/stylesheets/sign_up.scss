@@ -77,7 +77,26 @@
             background-color: var(--hover-Green);
         }
     }
+}
 
+.signup_volver {
+    width: 100px;
+    height: 30px;
+    background-color: var(--Green);
+    font-size: 20px;
+    margin-left: 40px;
+    border-radius: 4.8px;
+    
+    a {
+        color: var(--black);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+
+        &:active {
+           border-radius: 4.8px
+        }
+    }
 }
 
 .footer_signup {

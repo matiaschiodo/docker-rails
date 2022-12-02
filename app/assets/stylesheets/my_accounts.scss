@@ -1,5 +1,4 @@
 #my-accounts {
-    background-color: var(--Content1);
     padding: 20px;
 }
 
@@ -35,13 +34,13 @@
     }
 }
 
-#backto_mybudgets {
+#backto_mybudgets, #backto_login {
     width: 319px;
     margin: auto;
     a {
         text-decoration: none;
     }
-    #boton_accounts {
+    #boton_accounts, form.button_to {
         width: 319px;
         height: 40px;
         display: grid;
@@ -49,8 +48,17 @@
         background-color: var(--Green);
         font-size: 20px;
         color: var(--Background); 
+        margin-bottom: 10px;
     }
 }
+
+#backto_login {
+    input {
+        background-color: var(--Green);
+        color: var(--Background);
+    }
+}
+
 
 .myaccounts_title {
     display: flex;
@@ -69,6 +77,7 @@
 
 @media (min-width: 641px) {
     #my-accounts {
+        background-color: var(--Content1);
         width: 552px;
         margin: auto;
         margin-bottom: 77px;
@@ -94,8 +103,10 @@
         width: 360px;
         #boton_accounts {
             width: 360px;
-            margin-bottom: 54px;
         }
+    }
+    #backto_login {
+        margin-bottom: 54px;
     }
     .myaccounts_title {
         margin-left: 76px;
@@ -136,5 +147,11 @@
         }
     }
 
+    #backto_login {
+        form.button_to {
+            width: 278px;
+            margin: auto;
+        }
+    }
 }
 

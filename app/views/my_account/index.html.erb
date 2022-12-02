@@ -44,7 +44,12 @@
             </div>
         </section>
     </div>
+
     <div id="backto_mybudgets">
         <a href="/budgets"><input type="button" value="Mis Presupuestos" id="boton_accounts"></input></a>
     </div>
+    <div id="backto_login">
+        <%= button_to 'Cerrar Sesion', destroy_user_session_path, method: :delete %>
+    </div>
+
 </main>
