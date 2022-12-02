@@ -110,7 +110,18 @@ li {
 .modal-body form{
 display: flex;   
 flex-direction: column;
+height: 189px;
+
 height: 50%;
+}
+.check-box{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 1em; */
+}
+.check-box:hover{
+    color: var(--Green);
 }
 .modal-dialog {
     background: #4B4B4B;
@@ -128,7 +139,7 @@ height: 50%;
 .modal-dialog-ordenar {
     margin-left: 10px;
     margin-top: 10px;
-    width: 100px;
+    width: 130px;
     height: 20px;
 
 
@@ -151,7 +162,10 @@ height: 50%;
     font-size: 12.8px;
     line-height: 19px;
 }
-
+.modal-dialog input{
+    background: red;
+    display: flex;
+}
 #vehicle1:hover {
     color: red;
     cursor: pointer;
@@ -179,6 +193,7 @@ height: 50%;
 }
 
 .modal-dialog input {
+    display: flex;
     border-radius: 100%;
 }
 
