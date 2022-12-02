@@ -1,11 +1,13 @@
 .main_login {
     background-color: var(--Content1);
     position: relative;
-    padding: 90px;
     display: grid;
     align-items: center;
     justify-content: center;
-}
+    align-content: center;
+    padding-bottom: 0;
+    width: auto;
+  }  
 
 .field_login {
 
@@ -165,8 +167,8 @@ div.title {
         margin: auto;
         margin-bottom: 77px;
         margin-top: 76px;
-    }
-
+        padding: 90px;
+        }
     div.title {
         padding-bottom: 40px;
     }
@@ -218,6 +220,7 @@ div.title {
 
     .main_login {
         background-color: var(--Background);
+        min-height: 100vh;
     }
 
     div.title {

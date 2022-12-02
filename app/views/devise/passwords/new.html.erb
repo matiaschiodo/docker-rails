@@ -1,16 +1,46 @@
-<h2><%=t('Forgot_password')%></h2>
+<section class="olvida_contraseña">
+  <h2 class="forgot_password"><%=t('Forgot_password')%></h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="volver_password">
+      <a href="/home"><span class="material-symbols-outlined">
+          arrow_back
+          </span></a>
   </div>
 
-  <div class="actions">
-    <%= f.submit t('Send_reset_password_mail') %>
+  <div class="title_password">
+      <img src="/images/Flow_logo_grande.png">
   </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+
+  <p class="forgotpassword"> ¿Olvidaste tu contraseña? </p>
+
+  
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="password_email">
+      <p>Escribe tu dirección de Email<br> 
+        y te enviaremos un correo electrónico</p>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="enviar_mail">
+      <%= f.submit t('Send_reset_password_mail') %>
+    </div>
+
+</section>
+
+<footer class="footer_login">
+  <div class="login_footer_desktop">
+    <p id="desktop_footer1"><a href="#">¿Necesitas ayuda?</a></p>
+    <p id="desktop_footer2"><a href="#">2022 - Telecom Argentina S.A.</a></p>
+  </div>
+  <div class="login_footer_mobile">
+    <p id="mobile_footer1"><a href="#">Ayuda</a></p>
+    <p id="mobile_footer2"><a href="#">Telecom Argentina</a></p>
+  </div>
+</footer>
+
+  <% end %>
+
+
