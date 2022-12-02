@@ -194,6 +194,40 @@ border-radius: 4px;
     .modal_footer-box{
         justify-content: flex-end;
     }
+    .detalle_presupuesto a{
+        /* background-color: red; */
+        color: var(--Gris-text-50);
+    }
+    .edit-budget{
+        color: var(--Gris-text-500);
+        /* border: solid; */
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .edit_back-budget{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+
+    }
+    .see-budget-box{
+        display: flex;
+        gap: 0.4em;
+        align-items: center;
+        color: var(--Gris-text-500);
+    }
+    .see-budget-box a{
+        color: var(--Gris-text-500);
+
+    }
+    .see-budget-box a:hover{
+        color: var(--Gris-text-50);
+
+    }
+    .see-budget-box:hover{
+        color: var(--Gris-text-50);
+    }
 @media (min-width: 700px) {
     .detail-1erSection,.detail-plan,.detail-combo,.detail-explain{
         width: 100%;

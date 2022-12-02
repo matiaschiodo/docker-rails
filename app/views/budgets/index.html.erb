@@ -1,4 +1,3 @@
-
 <!-- <p id="notice"><%#= notice %></p> -->
 
 <body class="budget-body">
@@ -64,12 +63,12 @@
         </div>
       </div>
     </div>
+    <% @budgets.each do |budget| %>
     <div class="budgets_products">
 
       <ul>
         <%#= budget.name %>
         <%#= link_to 'Show', budget %>
-        <% @budgets.each do |budget| %>
 
         <!-- <p>Presupuesto #20420</p> -->
         <p><%= budget.name %></p>
@@ -78,7 +77,7 @@
           <li class="detail-li"><%= budget.expiration_date %></li>
           <%#= budget.total %>
 
-          <li class="detail-li">  <%= budget.total %></li>
+          <li class="detail-li"> <%= budget.total %></li>
 
         </ul>
       </ul>
@@ -101,7 +100,8 @@
                   El producto seleccionado se eliminará de tu presupuesto, puedes volver a agregarlo luego </div>
                 <div class="modal-footer">
                   <button type="button" class="btn  btn-success myButton2" data-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-success myButton"> <%= link_to 'Si,eliminar', budget, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+                  <button type="button" class="btn btn-success myButton">
+                    <%= link_to 'Si,eliminar', budget, method: :delete, data: { confirm: 'Are you sure?' } %></button>
                 </div>
               </div>
             </div>

@@ -107,7 +107,11 @@ li {
     border: none;
     background: var(--Background);
 }
-
+.modal-body form{
+display: flex;   
+flex-direction: column;
+height: 50%;
+}
 .modal-dialog {
     background: #4B4B4B;
     position: absolute;
@@ -181,7 +185,7 @@ li {
 @media (max-width:700px) {
     .budgets_search {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 100%;
         align-items: center;
         margin-bottom: 10px;

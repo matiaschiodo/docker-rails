@@ -1,6 +1,17 @@
-<h1><%=t('.editing_budget')%></h1>
+<h1 class="edit-budget"><%=t('.editing_budget')%></h1>
 
 <%= render 'form', budget: @budget %>
+<div class="edit_back-budget">
 
-<%= link_to t('common.show'), @budget %> 
-<%= link_to t('common.back'), budgets_path %>
+  <span class="material-symbols-outlined see-budget-box">
+    visibility
+    <%= link_to t('common.show'), @budget %> 
+  </span>
+  
+  
+  <a href="/budgets">
+    <span class="material-symbols-outlined detail-icon">
+      arrow_back
+    </span>
+  </a>
+</div>

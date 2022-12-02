@@ -1,35 +1,41 @@
-<p id="notice"><%= notice %></p>
-
+<!-- <p id="notice"><%#= notice %></p> -->
+<!-- 
 <p>
   <strong>Name:</strong>
-  <%= @budget.name %>
 </p>
 
 <p>
   <strong>Expiration date:</strong>
-  <%= @budget.expiration_date %>
 </p>
 
 <p>
   <strong>Total:</strong>
-  <%= @budget.total %>
-</p>
+</p> -->
 
-<%= link_to 'Edit', edit_budget_path(@budget) %> |
-<%= link_to 'Back', budgets_path %>
+<%#= link_to 'Edit', edit_budget_path(@budget) %> |
+<!-- <a href="/budgets">
+  <span class="material-symbols-outlined detail-icon">
+    arrow_back
+  </span>
+</a> -->
 <section class="budgets-section">
   <section class="detail-1erSection">
 
     <div class="detalle_presupuesto d-flex">
-      <a href="#"><span class="material-symbols-outlined detail-icon">
+      <a href="/budgets">
+        <span class="material-symbols-outlined detail-icon">
           arrow_back
-        </span></a>
-      <p class="detail-presupuesto">Presupuesto #20420</p>
-      <a href="#"><span class="material-symbols-outlined detail-icon">
+        </span>
+      </a>
+      <p class="detail-presupuesto">Presupuesto: <%= @budget.name %></p>
+      <a class="editar-btn-budget" href="budgets/id/edit"><span class="material-symbols-outlined detail-icon">
           edit
-        </span></a>
+        </span>
+        <%= link_to 'Editar', edit_budget_path(@budget) %>
+
+      </a>
     </div>
-    <p class="detail-date">01/11/2022-01/12/2022</p>
+    <p class="detail-date">Fecha de expiracion: <%= @budget.expiration_date %></p>
   </section>
   <section class="detail-plan">
     <h3>Internet 100 MB + Flow Full</h3>
