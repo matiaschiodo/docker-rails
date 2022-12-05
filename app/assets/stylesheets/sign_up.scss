@@ -54,6 +54,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-right: 50px;
     width: 319px;
     height: 40px;
     border-radius: 4.8px 4.8px 0px 0px;
@@ -106,7 +107,7 @@
     font-size: 20px;
     display: grid;
     align-items: center;
-    position: absolute;
+    // position: absolute;
     bottom: 0;
     width: 100%;
 
@@ -189,7 +190,7 @@
         display: none;
     }
     .footer_signup {
-        position: absolute;
+        // position: absolute;
         bottom: 0;
         width: 100%;
 

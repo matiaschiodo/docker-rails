@@ -38,6 +38,10 @@ li {
     display: flex;
     align-items: center;
 }
+.box-search{
+    display: flex;
+    align-items: center;
+}
 
 .input-search-box1 {
     display: flex;
