@@ -44,14 +44,14 @@ li {
 }
 
 .input-search-box1 {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 260px;
     height: 36px;
     background: #2A2E34;
-    border-radius: 4px;
+    border-radius: 4px; */
 }
 
 .input-search-box input {
