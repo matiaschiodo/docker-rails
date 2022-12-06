@@ -72,8 +72,8 @@ form {
     margin-right: 0px;
   }
 
-  .text_login1 label {
-    width: 200%;
+  .text_login3 label {
+    /* width: 200%; */
     height: 24px;
     justify-content: flex-start;
     align-self: flex-start;
