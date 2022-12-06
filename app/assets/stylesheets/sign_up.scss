@@ -141,7 +141,12 @@
 
     .field_signup1 {
         display: flex;
-        justify-content: space-evenly;
+
+        .signup_email,
+        .signup_password,
+        .signup_confirmation {
+            padding-left: 10px;
+        }
     }
 
     .datos_signup {
