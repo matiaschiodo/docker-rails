@@ -39,10 +39,13 @@
      }
    }
  }
+ 
+ .input-search {
 
- .input-search-box span {
-   color: var(--Gris-text-50);
-   margin-top: 6px;
+    .input-search-box span {
+        color: var(--Gris-text-50);
+        margin-top: 6px;
+    }
  }
 
 
@@ -134,7 +137,6 @@
    }
 
    div.input-search {
-     // padding-left: 235px;
 
      div.input-search-box {
        display: flex;
@@ -179,10 +181,12 @@
      padding-left: 111px;
      padding-right: 71px;
    }
-
-   div.input-search-box {
-     display: none;
-   }
+   
+   .input-search {
+      div.input-search-box {
+        display: none;
+      }
+  }
 
    .navbar-home {
      display: none;

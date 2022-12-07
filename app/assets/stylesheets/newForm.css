@@ -48,45 +48,13 @@ form {
     text-align: center;
   }
 
-  .signup_confirmation {
-    text-align: center;
-    margin: 0 auto;
-
-  }
-
   .field input {
     width: 700px;
-    text-align: center;
-  }
+    text-align: start;
+  } 
 
   .form-box {
     text-align: center;
   }
 
-  .text_login label {
-    width: 100%;
-    height: 24px;
-    justify-content: flex-start;
-    align-self: flex-start;
-    text-align: center;
-    margin-right: 0px;
-  }
-
-  .text_login3 label {
-    /* width: 200%; */
-    height: 24px;
-    justify-content: flex-start;
-    align-self: flex-start;
-    margin-right: 0px;
-    text-align: center;
-
-
-
-  }
-
-  .text_login,
-  .text_login1,
-  .text_login2 {
-    margin-right: 0px;
-  }
 }
