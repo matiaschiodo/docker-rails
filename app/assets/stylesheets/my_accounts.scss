@@ -9,7 +9,6 @@
 
     ul {
         background-color: var(--Content2);
-        border-radius: 4px 4px 0px 0px;
         margin-bottom: 24px;
     }
     
@@ -148,6 +147,7 @@
     }
 
     #backto_login {
+        margin-bottom: 20px;
         form.button_to {
             width: 278px;
             margin: auto;

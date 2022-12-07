@@ -57,17 +57,11 @@
      color: var(--Gris-text-50);
    }
 
-   a:hover {
-     color: var(--hover-Green);
-     text-decoration: none;
-   }
-
-   span {
-     color: var(--Gris-text-50);
-   }
-
    p {
      margin-bottom: 0 !important;
+     &:hover {
+      color: var(--hover-Green);
+    }
    }
  }
 
@@ -160,6 +154,7 @@
 
      span {
        margin-right: 16px;
+       color: var(--hover-Green);
      }
    }
 
@@ -192,8 +187,13 @@
      display: none;
    }
 
-   .linkto_myaccount p {
-     display: none;
+   .linkto_myaccount {
+      p {
+      display: none;
+      }
+      span:hover {
+        color: var(--hover-Green);
+      }
    }
 
    .header_mobile_search {

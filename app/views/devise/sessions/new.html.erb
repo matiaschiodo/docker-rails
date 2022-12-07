@@ -1,66 +1,7 @@
-<header>
-  <nav class="navbar">
-
-    <div class="mobile_menu">
-
-      <span data-toggle="modal" data-target="#exampleModal" class="material-symbols-outlined">
-        menu
-      </span>
-
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" id="modal_header">
-          <div class="modal-content">
-            <div class="modal-body">
-              <ul>
-                <li id="list_header"><a href="/">Suscripciones</a></li>
-                <li id="list_header"><a href="/">Tienda</a></li>
-                <li id="list_header"><a href="/">TV y Streaming</a></li>
-                <li id="list_header"><a href="/">Contacto</a></li>
-                <li id="list_header1"><a href="/budgets">Mis presupuestos</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="navbar-logo"><a href="/home"><img src="/images/Flow_logo.png"></a>
-    </div>
-    <div class="navbar-home">
-      <ul>
-        <li><a href="/">Suscripciones</a></li>
-        <li><a href="/">Tienda</a></li>
-        <li><a href="/">TV y Streaming</a></li>
-        <li><a href="/budgets">Presupuestos</a></li>
-        <li><a href="/">Contacto</a></li>
-      </ul>
-    </div>
-
-      <div class="input-search">
-        <div class="input-search-box">
-          <input type="text" placeholder="Buscar...">
-          <a href=""><span class="material-symbols-outlined">
-              search
-            </span>
-          </a>
-        </div>
-      </div>
-
-      <div class="header_mobile_search">
-        <span class="material-symbols-outlined">
-          search
-        </span>
-      </div>
-
-  </nav>
-</header>
-
-
 <main class="main_login">
 
     <div class="title">
         <img src="/images/Flow_logo_grande.png" class="logo_login">
-        <h2 class="login_title"><%=t('.log_in_title')%></h2>
     </div>
     <div id="iniciar_sesion">
       <p>Iniciar sesión</p>
@@ -103,7 +44,8 @@
 <% end %>
 
 <div class="login_end">
-  <%= render "devise/shared/links" %>
+  <a href="/users/sign_up">Registrarse</a>
+  <a href="/users/password/new">¿Olvidaste tu contraseña?</a>
 </div>
 
 </main>
