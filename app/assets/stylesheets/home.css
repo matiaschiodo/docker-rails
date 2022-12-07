@@ -43,15 +43,12 @@ main {
 }
 
 .slider-img2 {
-    margin-left: 40px;
-    /* width: 90%; */
+    margin: 10px  ;
+    margin-left: 70px;
+    width: 100%;
     display: flex;
     align-self: center;
-    /* margin: 15px;
-    margin-left: 30px; */
-    width: 100%;
-    width: 1358.57px;
-    /* height: 232px; */
+    width: 90%;
 }
 
 .swiper1 {
