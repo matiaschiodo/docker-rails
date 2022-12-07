@@ -64,156 +64,142 @@
   </nav>
 </header>
 
-<!-- <div class="budget-bodye"> -->
 
-  <section class="budgets-section budget-body">
+<section class="budgets-section budget-body">
+  <br><br>
+  <a class="new-budget-anchor" href="/budgets/new">Nuevo presupuesto</a>
+  <br>
+  <div class="budgets_search">
+    <h3>Presupuestos</h3>
+    <div class="input-search box-search">
+      <div class="input-search-box ">
+        <!-- <form action=""> -->
 
-    <div class="budgets_search">
-      <h3>Presupuestos</h3>
-      <div class="input-search box-search">
-        <div class="input-search-box ">
-          <!-- <form action=""> -->
+        <input type="text" placeholder="Buscar...">
+        <!-- <input type="submit"> -->
+        <span class="material-symbols-outlined search-icon-budget ">
+          search
+        </span>
+        <!-- </form> -->
 
-          <input type="text" placeholder="Buscar...">
-          <!-- <input type="submit"> -->
-          <span class="material-symbols-outlined search-icon-budget ">
-            search
-          </span>
-          <!-- </form> -->
-
-        </div>
-        <button type="button" class="budgets_button" data-toggle="modal" data-target="#myModal">
-          <img src="/images/sort_by_alpha.png" alt="">
       </div>
-      </button>
+      <button type="button" class="budgets_button" data-toggle="modal" data-target="#myModal">
+        <img src="/images/sort_by_alpha.png" alt="">
     </div>
-    <a class="new-budget-anchor" href="/budgets/new">Nuevo presupuesto</a>
+    </button>
+  </div>
+  
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="modal fade" id="myModal">
-            <div class="modal-dialog modal-sm">
-              <!-- <div class="modal-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-sm">
+            <!-- <div class="modal-content">
                 <h3>Ordenar por :</h3>
 
               </div> -->
-              <div class="modal-footer">
-                <p class="modal-dialog-ordenar">Ordenar por :</p>
+            <div class="modal-footer">
+              <p class="modal-dialog-ordenar">Ordenar por :</p>
 
-                <button type="text" class="btn" value="close">
-                  <img src="/images/close-icon.png" alt="">
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="check-box">
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> más nuevo</label> <br>
+              <button type="text" class="btn" value="close">
+                <img src="/images/close-icon.png" alt="">
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="check-box">
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> más nuevo</label> <br>
 
-                  </div>
-                  <div class="check-box">
+                </div>
+                <div class="check-box">
 
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label for="vehicle2"> más viejo</label><br>
-                  </div>
-                  <div class="check-box">
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> más viejo</label><br>
+                </div>
+                <div class="check-box">
 
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label for="vehicle3"> Precio más bajo</label> <br>
-                  </div>
-                  <div class="check-box">
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                  <label for="vehicle3"> Precio más bajo</label> <br>
+                </div>
+                <div class="check-box">
 
-                    <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
-                    <label for="vehicle4"> Precio más alto</label>
+                  <input type="checkbox" id="vehicle4" name="vehicle4" value="Boat">
+                  <label for="vehicle4"> Precio más alto</label>
 
-                  </div>
-                </form>
+                </div>
+              </form>
 
 
-              </div>
-              <!-- <div class="modal-footer">
+            </div>
+            <!-- <div class="modal-footer">
                 <button type="text" class="btn" value="close">
                   <img src="./web-experto/images/close-icon.png" alt="">
                 </button>
               </div> -->
 
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <% @budgets.each do |budget| %>
-    <div class="budgets_products">
+  </div>
+  <% @budgets.each do |budget| %>
+  <div class="budgets_products">
 
-      <ul>
-        <%#= budget.name %>
-        <%#= link_to 'Show', budget %>
+    <ul>
+      <%#= budget.name %>
+      <%#= link_to 'Show', budget %>
 
-        <!-- <p>Presupuesto #20420</p> -->
-        <p><%= budget.name %></p>
-        <ul class="budgets_products-detail">
-          <%= budget.expiration_date %>
-          <li class="detail-li"><%= budget.expiration_date %></li>
-          <%#= budget.total %>
-
-          <li class="detail-li"> <%= budget.total %></li>
-
-        </ul>
-      </ul>
+      <!-- <p>Presupuesto #20420</p> -->
+      <p><%= budget.name %></p>
       <ul class="budgets_products-detail">
+        <%= budget.expiration_date %>
+        <li class="detail-li"><%= budget.expiration_date %></li>
         <%#= budget.total %>
-        <li class="detail-li-price"><%= budget.total %></li>
-        <li class="detail-li-price">
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">¿Eliminar producto?</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
 
-                  El producto seleccionado se eliminará de tu presupuesto, puedes volver a agregarlo luego </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn  btn-success myButton2" data-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-success myButton">
-                    <%= link_to 'Si,eliminar', budget, method: :delete, data: { confirm: 'Are you sure?' } %></button>
-                </div>
+        <li class="detail-li"> <%= budget.total %></li>
+
+      </ul>
+    </ul>
+    <ul class="budgets_products-detail">
+      <%#= budget.total %>
+      <li class="detail-li-price"><%= budget.total %></li>
+      <li class="detail-li-price">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Eliminar producto?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+                El producto seleccionado se eliminará de tu presupuesto, puedes volver a agregarlo luego </div>
+              <div class="modal-footer">
+                <button type="button" class="btn  btn-success myButton2" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success myButton">
+                  <%= link_to 'Si,eliminar', budget, method: :delete, data: { confirm: 'Are you sure?' } %></button>
               </div>
             </div>
           </div>
-          <%#= link_to 'Destroy', budget, method: :delete, data: { confirm: 'Are you sure?' } %>
-          <span class="material-symbols-outlined budgets_delete-icon " data-toggle="modal" data-target="#exampleModal">
-            delete
-          </span>
-        </li>
-      </ul>
-    </div>
-    <hr>
+        </div>
+        <%#= link_to 'Destroy', budget, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <span class="material-symbols-outlined budgets_delete-icon " data-toggle="modal" data-target="#exampleModal">
+          delete
+        </span>
+      </li>
+    </ul>
+  </div>
+  <hr>
 
 
-
-
-
-
-
-    <!-- <a class="new-budget-anchor" href="/budgets/new">Nuevo presupuesto</a> -->
-    <%#= link_to 'Nuevo Presupuesto', new_budget_path %>
-
-
-    <% end %>
-  </section>
-  
-
-<!-- </div> -->
-
-
-
-<!-- <footer class="footer-mobile">
+  <% end %>
+</section>
+<footer class="footer-mobile">
 
 
   <h1><img class="Telecom-img" src="./images/icon-telecom2.png" alt=""></h1>
@@ -308,4 +294,4 @@
           <li><img class=" afip-icon-desktop" src="./images/dataFiscal-icon.png" alt=""></li>
       </ul>
   </section>
-</footer> -->
+</footer>
