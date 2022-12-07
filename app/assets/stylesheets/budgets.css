@@ -59,13 +59,13 @@ li {
     border-radius: 4px; */
 }
 
-.input-search-box input {
+.input-search-box-budget input {
     background: #2A2E34;
     border: none;
 }
 .search-icon-budget {
     width: 20px;
-    height: 36px;
+    height: 30px;
 }
 .budgets_products-detail {
     display: flex;
