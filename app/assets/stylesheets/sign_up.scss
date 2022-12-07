@@ -1,6 +1,5 @@
 .sign_up {
     background-color: var(--black);
-    padding: 20px;
 
     p, label, em {
         color: var(--Gris-text-50);
@@ -54,7 +53,6 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-right: 50px;
     width: 319px;
     height: 40px;
     border-radius: 4.8px 4.8px 0px 0px;
@@ -62,6 +60,7 @@
     border-color: var(--black);
     margin-bottom: 24px;
     color: var(--Gris-text-50);
+    padding-left: 5px;
     
     &:focus-visible {
         color: var(--Gris-text-50);
@@ -102,14 +101,9 @@
 
 .footer_signup {
     background-color: var(--Content3);
-    height: 64px;
     color: var(--Gris-text-50);
     font-size: 20px;
-    display: grid;
-    align-items: center;
-    // position: absolute;
     bottom: 0;
-    width: 100%;
 
     a {
         color: var(--Gris-text-50);
@@ -134,6 +128,7 @@
         height: 690px;
         margin-top: 76px;
         margin-bottom: 77px;
+        padding: 20px;
     }
     .logo_signup {
         padding-top: 10px;
@@ -146,6 +141,9 @@
         .signup_password,
         .signup_confirmation {
             padding-left: 10px;
+        }
+        .signup_password {
+            margin-left: 50px;
         }
     }
 
@@ -195,9 +193,11 @@
         display: none;
     }
     .footer_signup {
-        // position: absolute;
         bottom: 0;
         width: 100%;
+        display: grid;
+        align-items: center;
+        height: 64px;
 
         .signup_footer_desktop {
             display: grid;
@@ -219,29 +219,46 @@
 }
 
 @media (max-width: 640px) {
+    #arrow_back_signup {
+       span {
+        padding: 20px;
+       }
+    }
     .title_signup, #datos_title  {
         display: flex;
         align-content: center;
         justify-content: center;
         align-items: center;
     }
-    .signup_footer_desktop {
-        display: none;
-    }
-    .signup_footer_mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
 
-        #mobile_footer1 {
-            display: grid;
-            justify-items: start;
-            margin-left: 24px;
+    .footer_signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+
+        .signup_footer_desktop {
+            display: none;
         }
-        #mobile_footer2 {
-            display: grid;
-            justify-items: end;
-            margin-right: 24px;
+        .signup_footer_mobile p {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
         }
+    }
+    .signup_email,
+    .signup_password,
+    .signup_confirmation,
+    #columna1,
+    #columna2,
+    .actions_signup {
+        padding-left: 10px;
+
+        label, p {
+            padding-left: 10px;
+        }
+
     }
 
 }
