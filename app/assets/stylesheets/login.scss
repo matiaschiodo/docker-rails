@@ -1,12 +1,10 @@
 .main_login {
-    background-color: var(--Content1);
     position: relative;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
     padding-bottom: 0;
-    width: auto;
+    min-height: 100vh;
   }  
 
 .field_login {
@@ -175,12 +173,8 @@ div.title {
 }
 
 @media (min-width: 641px) {
-    .main_login {
-        Width: 552px;
-        Height: 690px;
-        margin: auto;
-        margin-bottom: 77px;
-        margin-top: 76px;
+    .login {
+        background-color: var(--Content1);
         padding: 90px 90px 0px 90px;
     }
     .login_end {
@@ -240,7 +234,6 @@ div.title {
 
     .main_login {
         background-color: var(--Background);
-        min-height: 100vh;
     }
     .login_end {
         padding-top: 40px;
