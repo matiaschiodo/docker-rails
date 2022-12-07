@@ -1,5 +1,6 @@
 .sign_up {
     background-color: var(--black);
+    min-height: 100vh;
 
     p, label, em {
         color: var(--Gris-text-50);
@@ -121,15 +122,11 @@
 }
 
 @media (min-width: 641px) {
-    .sign_up {
+    .signup {
         background-color: var(--Content1);
-        margin: auto;
-        width: 1128px;
-        height: 690px;
-        margin-top: 76px;
-        margin-bottom: 77px;
-        padding: 20px;
+        padding: 90px;
     }
+
     .logo_signup {
         padding-top: 10px;
     }
@@ -141,9 +138,6 @@
         .signup_password,
         .signup_confirmation {
             padding-left: 10px;
-        }
-        .signup_password {
-            margin-left: 50px;
         }
     }
 

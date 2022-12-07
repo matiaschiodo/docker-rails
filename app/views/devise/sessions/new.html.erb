@@ -1,52 +1,56 @@
 <main class="main_login">
 
-    <div class="title">
-        <img src="/images/Flow_logo_grande.png" class="logo_login">
-    </div>
-    <div id="iniciar_sesion">
-      <p>Iniciar sesión</p>
-    </div>
+  <div class="login">
 
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <div class="field">
-        <div class="text_login"><%= f.label :email %><br /></div>
-        <div class="field_login"><%= f.email_field :email, autofocus: true, autocomplete: "email" %></div>
+      <div class="title">
+          <img src="/images/Flow_logo_grande.png" class="logo_login">
+      </div>
+      <div id="iniciar_sesion">
+        <p>Iniciar sesión</p>
       </div>
 
-      <div class="field">
-        <div class="text_login"><%= f.label :password %><br /></div>
-        <div class="field_login"><%= f.password_field :password, autocomplete: "current-password" %></div>
-      </div>
-
-      <% if devise_mapping.rememberable? %>
-        <div class="field_rememberme" id="text-login">
-            <%= f.label :remember_me %>
-            <%= f.check_box :remember_me %>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <div class="text_login"><%= f.label :email %><br /></div>
+          <div class="field_login"><%= f.email_field :email, autofocus: true, autocomplete: "email" %></div>
         </div>
+
+        <div class="field">
+          <div class="text_login"><%= f.label :password %><br /></div>
+          <div class="field_login"><%= f.password_field :password, autocomplete: "current-password" %></div>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="field_rememberme" id="text-login">
+              <%= f.label :remember_me %>
+              <%= f.check_box :remember_me %>
+          </div>
         <% end %>
 
-      <div class="actions" id="login_button">
-        <%= f.submit t('.log_in') %>
+        <div class="actions" id="login_button">
+          <%= f.submit t('.log_in') %>
+        </div>
+
+        <div class="items_login">
+          <img src="/images/Line.png" id="linea_login">
+          <img src="/images/o.png">
+          <img src="/images/Line.png" id="linea_login">
+        </div>
+
+        <div class="social_login">
+          <a href="#"><img src="/images/facebbok.png" id="facebook_login"></a>
+          <a href="#"><img src="/images/twitter.png"></a>
+          <a href="#"><img src="/images/linkedin.png"></a>
+        </div>
+
+      <% end %>
+
+      <div class="login_end">
+        <a href="/users/sign_up">Registrarse</a>
+        <a href="/users/password/new">¿Olvidaste tu contraseña?</a>
       </div>
 
-      <div class="items_login">
-        <img src="/images/Line.png" id="linea_login">
-        <img src="/images/o.png">
-        <img src="/images/Line.png" id="linea_login">
-      </div>
-
-      <div class="social_login">
-        <a href="#"><img src="/images/facebbok.png" id="facebook_login"></a>
-        <a href="#"><img src="/images/twitter.png"></a>
-        <a href="#"><img src="/images/linkedin.png"></a>
-      </div>
-
-<% end %>
-
-<div class="login_end">
-  <a href="/users/sign_up">Registrarse</a>
-  <a href="/users/password/new">¿Olvidaste tu contraseña?</a>
-</div>
+  </div>
 
 </main>
 
