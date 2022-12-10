@@ -1,6 +1,7 @@
 .sign_up {
     background-color: var(--black);
     min-height: 100vh;
+    max-width: 100%;
 
     p, label, em {
         color: var(--Gris-text-50);
@@ -19,6 +20,12 @@
         display: none;
     }
 }
+
+#arrow_back_signup {
+    span {
+     padding: 20px;
+    }
+ }
 
 .title_signup {
     p {
@@ -122,9 +129,15 @@
 }
 
 @media (min-width: 641px) {
+    .sign_up {
+        padding: 90px;
+        display: flex;
+        justify-content: center;
+    }
     .signup {
         background-color: var(--Content1);
-        padding: 90px;
+        height: 690px;
+        width: 1128px;
     }
 
     .logo_signup {
@@ -133,6 +146,7 @@
 
     .field_signup1 {
         display: flex;
+        justify-content: space-evenly;
 
         .signup_email,
         .signup_password,
@@ -159,7 +173,7 @@
     }
 
     .title_signup p {
-       margin-left: 30px;
+       margin-left: 45px;
     }
 
     .signup_email #user_email,
@@ -170,8 +184,9 @@
     #telefono,
     #direccion,
     .actions_signup input {
-        display: inline;
         border-color: var(--Content3);
+        display: flex;
+        flex-direction: column;
     }
     #name,
     #apellido,
@@ -179,8 +194,11 @@
     #direccion {
         width: 360px;
     }
+
     .actions_signup {
-        margin-left: 168px;
+        input {
+            margin: 0 177px;
+        }
     }
 
     .signup_footer_mobile {
@@ -213,11 +231,6 @@
 }
 
 @media (max-width: 640px) {
-    #arrow_back_signup {
-       span {
-        padding: 20px;
-       }
-    }
     .title_signup, #datos_title  {
         display: flex;
         align-content: center;

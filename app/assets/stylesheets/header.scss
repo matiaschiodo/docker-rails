@@ -2,15 +2,9 @@
    display: none;
  }
 
- header {
-   width: 100vw;
-
-
- }
-
  nav.navbar {
    background-color: var(--Content2);
-   width: 100%;
+   min-width: 100%;
    height: 56px;
    display: flex;
 
@@ -26,7 +20,7 @@
    }
 
    ul li {
-     padding-inline: 24px;
+     padding-inline: 20px;
    }
 
    ul li a {
@@ -150,7 +144,7 @@
    }
 
    .linkto_myaccount {
-     padding-right: 156px;
+     padding-right: 100px;
 
      span {
        margin-right: 16px;
