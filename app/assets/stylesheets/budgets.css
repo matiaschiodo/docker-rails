@@ -132,7 +132,7 @@ height: 50%;
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    /* gap: 1em; */
+    gap: 1em;
 }
 .check-box:hover{
     color: var(--Green);
@@ -170,6 +170,9 @@ height: 50%;
 }
 .new-budget-anchor:hover{
     color: var(--Gris-text-400);
+}
+label{
+    margin-bottom: 0;
 }
 .modal-dialog label {
     width: 160px;
