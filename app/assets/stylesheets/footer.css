@@ -84,6 +84,7 @@ footer div {
   align-items: initial;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 1.2em;
 }
 
