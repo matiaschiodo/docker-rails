@@ -55,7 +55,7 @@ footer li {
 
 footer ul {
 
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .footer_main-ul ul {
@@ -268,8 +268,12 @@ footer div {
 }
 
 @media (min-width: 830px) {
+  .arrepentimiento{
+    font-size: 10px;
+    color: green;
+  }
   .footer-desktop li {
-      font-size: 14px;
+      font-size: 12px;
   }
 
   .icons-list {

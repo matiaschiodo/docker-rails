@@ -8,7 +8,7 @@
    height: 56px;
    display: flex;
 
-   flex-wrap: nowrap !important;
+  //  flex-wrap: nowrap !important;
  }
 
  .navbar-home {
@@ -33,13 +33,13 @@
      }
    }
  }
- 
+
  .input-search {
 
-    .input-search-box span {
-        color: var(--Gris-text-50);
-        margin-top: 6px;
-    }
+   .input-search-box span {
+     color: var(--Gris-text-50);
+     margin-top: 6px;
+   }
  }
 
 
@@ -53,9 +53,10 @@
 
    p {
      margin-bottom: 0 !important;
+
      &:hover {
-      color: var(--hover-Green);
-    }
+       color: var(--hover-Green);
+     }
    }
  }
 
@@ -170,24 +171,25 @@
      padding-left: 111px;
      padding-right: 71px;
    }
-   
+
    .input-search {
-      div.input-search-box {
-        display: none;
-      }
-  }
+     div.input-search-box {
+       display: none;
+     }
+   }
 
    .navbar-home {
      display: none;
    }
 
    .linkto_myaccount {
-      p {
-      display: none;
-      }
-      span:hover {
-        color: var(--hover-Green);
-      }
+     p {
+       display: none;
+     }
+
+     span:hover {
+       color: var(--hover-Green);
+     }
    }
 
    .header_mobile_search {
