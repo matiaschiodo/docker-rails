@@ -2,14 +2,15 @@
    display: none;
  }
 
- nav.navbar {
-   background-color: var(--Content2);
-   min-width: 100%;
-   height: 56px;
-   display: flex;
-
-  //  flex-wrap: nowrap !important;
- }
+nav.navbar {
+    background-color: var(--Content2);
+    min-width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
  .navbar-home {
    ul {
