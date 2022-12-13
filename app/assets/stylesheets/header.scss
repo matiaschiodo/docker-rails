@@ -112,7 +112,7 @@ nav.navbar {
    }
  }
 
- @media (min-width: 701px) {
+ @media (min-width: 1300px) {
    nav {
      display: flex;
      align-items: center;
@@ -159,7 +159,7 @@ nav.navbar {
    }
  }
 
- @media (max-width: 700px) {
+ @media (max-width: 1299px) {
    nav.navbar {
      padding: 20px;
      justify-content: center;
